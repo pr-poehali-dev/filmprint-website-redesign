@@ -164,7 +164,7 @@ export default function Index() {
               alt="FilmPrint"
               className="h-12 w-auto object-contain"
               style={{
-                filter: "drop-shadow(0 0 0.5px rgba(255,255,255,0.6)) drop-shadow(0 2px 8px rgba(0,0,0,0.5))"
+                filter: "drop-shadow(0 0 1px rgba(255,255,255,0.8)) drop-shadow(0 0 1.5px rgba(255,255,255,0.5)) drop-shadow(0 2px 8px rgba(0,0,0,0.5))"
               }}
             />
           </div>
