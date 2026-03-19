@@ -243,7 +243,7 @@ export default function Index() {
 
             <div className={`flex flex-wrap gap-4 ${heroSection.inView ? "animate-fade-up animate-delay-300" : "opacity-0"}`}>
               <button className="btn-red text-base" onClick={() => scrollTo("#contacts")}>
-                <span>Получить расчёт</span>
+                <span>Запросить КП</span>
               </button>
               <button className="btn-outline-white text-base" onClick={() => scrollTo("#services")}>
                 Наши услуги
