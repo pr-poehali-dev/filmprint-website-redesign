@@ -21,7 +21,7 @@ export default function ServicesSection({ activeService, setActiveService, scrol
           style={{ background: "radial-gradient(circle, #E0292D 0%, transparent 70%)" }} />
         <div ref={servicesSection.ref} className="max-w-7xl mx-auto px-6">
           <div className={`mb-16 ${servicesSection.inView ? "animate-fade-up" : "opacity-0"}`}>
-            <div className="section-label mb-4">Что мы делаем</div>
+            <div className="section-label mb-4"></div>
             <h2 className="font-oswald font-bold text-5xl md:text-6xl text-fp-black uppercase">
               Производственные <span className="text-gradient-red">возможности</span>
             </h2>
