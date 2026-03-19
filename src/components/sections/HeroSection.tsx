@@ -85,7 +85,7 @@ export default function HeroSection({ menuOpen, setMenuOpen, scrolled, scrollTo 
         <div ref={heroSection.ref} className="relative z-10 max-w-7xl mx-auto px-6 py-20">
           <div className="max-w-3xl">
             <div className={`mb-6 ${heroSection.inView ? "animate-fade-up" : "opacity-0"}`}>
-              <span className="text-sm font-oswald uppercase tracking-[0.3em] font-medium" style={{ fontStretch: "condensed", background: "linear-gradient(to right, #E0292D, rgba(224,41,45,0.3))", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>FilmPrint — ваше единое окно в мир производства.</span>
+              <span className="text-sm font-oswald uppercase tracking-[0.3em] font-medium" style={{ fontStretch: "condensed", background: "linear-gradient(to right, #E0292D, rgba(224,41,45,0.65))", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>FilmPrint — ваше единое окно в мир производства.</span>
             </div>
 
             <h1 className={`font-oswald font-black text-6xl md:text-7xl lg:text-8xl uppercase leading-none mb-6 ${heroSection.inView ? "animate-fade-up animate-delay-100" : "opacity-0"}`}>
