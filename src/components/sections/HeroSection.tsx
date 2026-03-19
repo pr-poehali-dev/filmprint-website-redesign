@@ -89,14 +89,14 @@ export default function HeroSection({ menuOpen, setMenuOpen, scrolled, scrollTo 
             </div>
 
             <h1 className={`font-oswald font-black text-6xl md:text-7xl lg:text-8xl uppercase leading-none mb-6 ${heroSection.inView ? "animate-fade-up animate-delay-100" : "opacity-0"}`}>
-              <span style={{ background: "linear-gradient(to right, #ffffff, rgba(255,255,255,0.35))", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>Печать</span><br />
-              <span style={{ background: "linear-gradient(to right, #E0292D, rgba(224,41,45,0.35))", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>любого</span><br />
-              <span style={{ background: "linear-gradient(to right, #ffffff, rgba(255,255,255,0.35))", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>масштаба</span>
+              <span style={{ background: "linear-gradient(to right, #ffffff, rgba(255,255,255,0.35))", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>профессиональная</span><br />
+              <span style={{ background: "linear-gradient(to right, #E0292D, rgba(224,41,45,0.35))", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>широкоформатная</span><br />
+              <span style={{ background: "linear-gradient(to right, #ffffff, rgba(255,255,255,0.35))", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>печать</span>
             </h1>
 
-            <p className={`text-white/60 text-xl md:text-2xl font-golos leading-relaxed mb-10 max-w-xl ${heroSection.inView ? "animate-fade-up animate-delay-200" : "opacity-0"}`}>
-              От наклейки до кинодекорации — производим быстро, точно по макету, с гарантией качества
-            </p>
+            <p className={`text-white/60 text-xl md:text-2xl font-golos leading-relaxed mb-10 max-w-xl ${heroSection.inView ? "animate-fade-up animate-delay-200" : "opacity-0"}`}>Один подрядчик.
+Одна ответственность. 
+Бесшовный результат.</p>
 
             <div className={`flex flex-wrap gap-4 mb-16 ${heroSection.inView ? "animate-fade-up animate-delay-300" : "opacity-0"}`}>
               <button className="btn-red text-base" onClick={() => scrollTo("#contacts")}>
