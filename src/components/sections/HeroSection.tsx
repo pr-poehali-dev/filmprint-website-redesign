@@ -109,7 +109,7 @@ export default function HeroSection({ menuOpen, setMenuOpen, scrolled, scrollTo 
               </button>
             </div>
 
-            <div className={`flex flex-wrap gap-6 ${heroSection.inView ? "animate-fade-up animate-delay-400" : "opacity-0"}`}>
+            <div className={`grid grid-cols-3 gap-4 ${heroSection.inView ? "animate-fade-up animate-delay-400" : "opacity-0"}`}>
               {USPS.map((usp) => (
                 <div key={usp.title} className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-sm bg-fp-red/10 border border-fp-red/20 flex items-center justify-center flex-shrink-0">
