@@ -19,16 +19,12 @@ export default function HeroSection({ scrollTo }: HeroSectionProps) {
           <div className="absolute inset-0 bg-gradient-to-r from-fp-black via-fp-black/80 to-transparent" />
         </div>
 
-        <div className="absolute right-0 top-0 bottom-0 w-16 hidden lg:flex flex-col overflow-hidden">
-          <div className="flex-1 bg-fp-black/80 flex flex-col">
-            {Array.from({ length: 30 }).map((_, i) => (
-              <div key={i} className="flex-1 flex flex-col items-center justify-around py-1">
-                <div className="w-6 h-3 bg-white/15 rounded-sm" />
-                <div className="w-10 h-6 bg-white/5 rounded-sm border border-white/10" />
-                <div className="w-6 h-3 bg-white/15 rounded-sm" />
-              </div>
-            ))}
-          </div>
+        <div className="absolute right-0 top-0 bottom-0 w-8 hidden lg:flex flex-col overflow-hidden">
+          {Array.from({ length: 20 }).map((_, i) => (
+            <div key={i} className="flex-1 border-b border-fp-red/30 flex items-center justify-center">
+              <div className="w-2 h-4 rounded-sm bg-fp-red/40" />
+            </div>
+          ))}
         </div>
 
         <div ref={heroSection.ref} className="relative z-10 max-w-7xl mx-auto px-6 py-32">
