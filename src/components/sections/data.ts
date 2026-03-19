@@ -10,7 +10,7 @@ export const NAV_LINKS = [
 
 export const STATS = [
   { value: "6+", label: "лет на рынке" },
-  { value: "5 000+", label: "выполненных проектов" },
+  { value: "3 200+", label: "выполненных проектов" },
   { value: "98%", label: "довольных клиентов" },
   { value: "1 день", label: "минимальный срок" },
 ];
