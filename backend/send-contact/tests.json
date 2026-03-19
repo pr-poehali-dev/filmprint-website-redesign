@@ -1,0 +1,29 @@
+{
+  "tests": [
+    {
+      "name": "OPTIONS preflight",
+      "method": "OPTIONS",
+      "path": "/",
+      "expectedStatus": 200
+    },
+    {
+      "name": "Отправка заявки",
+      "method": "POST",
+      "path": "/",
+      "body": {
+        "name": "Тест Тестов",
+        "contact": "+7 (999) 999-99-99",
+        "service": "Фотопечать",
+        "message": "Тестовая заявка"
+      },
+      "expectedStatus": 200
+    },
+    {
+      "name": "Ошибка без имени",
+      "method": "POST",
+      "path": "/",
+      "body": { "contact": "+7 (999) 999-99-99" },
+      "expectedStatus": 400
+    }
+  ]
+}
