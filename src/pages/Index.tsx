@@ -107,7 +107,7 @@ const REVIEWS = [
 const USPS = [
   { icon: "Zap", title: "Срок от 1 дня", desc: "Ходовые материалы всегда в наличии." },
   { icon: "Layers", title: "Полный цикл", desc: "От реквизитных документов до декораций." },
-  { icon: "Headphones", title: "Экспертная помощь", desc: "Подбираем материал под задачу" },
+  { icon: "Headphones", title: "Экспертная помощь", desc: "Подбираем оптимальное решение под задачу и бюджет" },
 ];
 
 function useInView(threshold = 0.15) {
