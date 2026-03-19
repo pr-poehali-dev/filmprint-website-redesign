@@ -226,9 +226,7 @@ export default function Index() {
 
         <div ref={heroSection.ref} className="relative z-10 max-w-7xl mx-auto px-6 pt-28 pb-20">
           <div className="max-w-3xl">
-            <div className={`section-label mb-6 ${heroSection.inView ? "animate-fade-up" : "opacity-0"}`}>
-              FilmPrint — партнёр для кино, бизнеса, частных клиентов
-            </div>
+            <div className={`section-label mb-6 ${heroSection.inView ? "animate-fade-up" : "opacity-0"}`}>FilmPrint - надежный тыл для вашего бизнеса</div>
 
             <h1 className={`font-oswald font-bold text-5xl md:text-7xl lg:text-8xl text-white leading-[0.9] uppercase mb-8 ${heroSection.inView ? "animate-fade-up animate-delay-100" : "opacity-0"}`}>
               Профессиональная<br />
