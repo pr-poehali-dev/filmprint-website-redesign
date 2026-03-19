@@ -84,8 +84,7 @@ export default function HeroSection({ menuOpen, setMenuOpen, scrolled, scrollTo 
 
         <div ref={heroSection.ref} className="relative z-10 max-w-7xl mx-auto px-6 py-32">
           <div className="max-w-3xl">
-            <div className={`inline-flex items-center gap-2 bg-fp-red/10 border border-fp-red/30 rounded-sm px-4 py-2 mb-8 ${heroSection.inView ? "animate-fade-up" : "opacity-0"}`}>
-              <div className="w-2 h-2 rounded-full bg-fp-red animate-pulse" />
+            <div className={`inline-flex items-center gap-2 px-4 py-2 mb-8 ${heroSection.inView ? "animate-fade-up" : "opacity-0"}`}>
               <span className="text-fp-red text-sm font-oswald uppercase tracking-widest">Профессиональная типография</span>
             </div>
 
