@@ -102,7 +102,7 @@ export default function HeroSection({ menuOpen, setMenuOpen, scrolled, scrollTo 
 
             <div className={`flex flex-wrap gap-4 mb-16 ${heroSection.inView ? "animate-fade-up animate-delay-300" : "opacity-0"}`}>
               <button className="btn-red text-base" onClick={() => scrollTo("#contacts")}>
-                <span>Получить расчёт</span>
+                <span>запросить кп</span>
               </button>
               <button className="btn-outline text-base" onClick={() => scrollTo("#portfolio")}>
                 <span>Смотреть работы</span>
