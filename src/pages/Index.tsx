@@ -231,7 +231,7 @@ export default function Index() {
             <h1 className={`font-oswald font-bold text-5xl md:text-7xl lg:text-8xl text-white leading-[0.9] uppercase mb-8 ${heroSection.inView ? "animate-fade-up animate-delay-100" : "opacity-0"}`}>
               Профессиональная<br />
               <span className="text-gradient-red">широкоформатная</span><br />
-              <span className="text-white/90">печать.</span>
+              <span className="text-white/90">печать</span>
             </h1>
 
             <p className={`text-white/60 text-lg md:text-xl font-golos max-w-xl mb-12 leading-relaxed ${heroSection.inView ? "animate-fade-up animate-delay-200" : "opacity-0"}`}>Ваше единое окно в мир производства. 
