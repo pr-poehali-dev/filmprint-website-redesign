@@ -12,7 +12,7 @@ const NAV_LINKS = [
 ];
 
 const STATS = [
-  { value: "10+", label: "лет на рынке" },
+  { value: "6+", label: "лет на рынке" },
   { value: "5 000+", label: "выполненных проектов" },
   { value: "98%", label: "довольных клиентов" },
   { value: "1 день", label: "минимальный срок" },
