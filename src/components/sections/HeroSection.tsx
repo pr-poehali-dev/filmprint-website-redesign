@@ -94,9 +94,11 @@ export default function HeroSection({ menuOpen, setMenuOpen, scrolled, scrollTo 
               <span style={{ background: "linear-gradient(to right, #ffffff, rgba(255,255,255,0.35))", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>печать</span>
             </h1>
 
-            <p className={`text-white/60 text-xl md:text-2xl font-golos leading-relaxed mb-10 max-w-xl ${heroSection.inView ? "animate-fade-up animate-delay-200" : "opacity-0"}`}>Один подрядчик.
-Одна ответственность. 
-Бесшовный результат.</p>
+            <div className={`text-white/60 text-xl md:text-2xl font-golos leading-relaxed mb-10 max-w-xl flex flex-col gap-4 ${heroSection.inView ? "animate-fade-up animate-delay-200" : "opacity-0"}`}>
+              <p>Один подрядчик.</p>
+              <p>Одна ответственность.</p>
+              <p>Бесшовный результат.</p>
+            </div>
 
             <div className={`flex flex-wrap gap-4 mb-16 ${heroSection.inView ? "animate-fade-up animate-delay-300" : "opacity-0"}`}>
               <button className="btn-red text-base" onClick={() => scrollTo("#contacts")}>
