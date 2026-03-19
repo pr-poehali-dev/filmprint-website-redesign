@@ -158,26 +158,13 @@ export default function Index() {
       {/* HEADER */}
       <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? "bg-fp-black/95 backdrop-blur-md shadow-lg shadow-black/30" : "bg-transparent"}`}>
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-3 cursor-pointer" onClick={() => scrollTo("#hero")}>
-            <div className="w-10 h-10 relative">
-              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
-                <rect x="2" y="10" width="24" height="18" rx="2" fill="#8D2B2C" />
-                <rect x="4" y="12" width="20" height="14" rx="1" fill="#222A2D" />
-                <rect x="6" y="15" width="16" height="8" rx="1" fill="#E0292D" opacity="0.3" />
-                <path d="M8 19 L20 19" stroke="#E0292D" strokeWidth="1.5" strokeLinecap="round" />
-                <path d="M8 22 L16 22" stroke="#E0292D" strokeWidth="1" strokeLinecap="round" />
-                <rect x="26" y="14" width="12" height="10" rx="1" fill="#8D2B2C" />
-                <rect x="28" y="15" width="2" height="8" rx="0.5" fill="#E0292D" />
-                <rect x="31" y="15" width="2" height="8" rx="0.5" fill="#fff" opacity="0.5" />
-                <rect x="34" y="15" width="2" height="8" rx="0.5" fill="#E0292D" />
-                <path d="M8 10 L14 5 L20 10" stroke="#E0292D" strokeWidth="1.5" fill="none" strokeLinecap="round" strokeLinejoin="round" />
-                <circle cx="14" cy="5" r="1.5" fill="#E0292D" />
-              </svg>
-            </div>
-            <div>
-              <div className="font-oswald font-bold text-xl text-white leading-none tracking-wider">FILM<span className="text-fp-red">PRINT</span></div>
-              <div className="text-[10px] text-white/40 uppercase tracking-[0.2em] font-golos">Профессиональная печать</div>
-            </div>
+          <div className="flex items-center cursor-pointer" onClick={() => scrollTo("#hero")}>
+            <img
+              src="https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/7f087863-9b26-41ce-a2cc-fa6861c14243.jpg"
+              alt="FilmPrint"
+              className="h-12 w-auto object-contain"
+              style={{ filter: "brightness(0) invert(1)" }}
+            />
           </div>
 
           <nav className="hidden lg:flex items-center gap-8">
@@ -663,23 +650,13 @@ export default function Index() {
       <footer className="bg-fp-black border-t border-white/5 py-12">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 mb-8">
-            <div className="flex items-center gap-3">
-              <div className="w-8 h-8">
-                <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
-                  <rect x="2" y="10" width="24" height="18" rx="2" fill="#8D2B2C" />
-                  <rect x="4" y="12" width="20" height="14" rx="1" fill="#222A2D" />
-                  <rect x="6" y="15" width="16" height="8" rx="1" fill="#E0292D" opacity="0.3" />
-                  <path d="M8 19 L20 19" stroke="#E0292D" strokeWidth="1.5" strokeLinecap="round" />
-                  <rect x="26" y="14" width="12" height="10" rx="1" fill="#8D2B2C" />
-                  <rect x="28" y="15" width="2" height="8" rx="0.5" fill="#E0292D" />
-                  <rect x="31" y="15" width="2" height="8" rx="0.5" fill="#fff" opacity="0.5" />
-                  <rect x="34" y="15" width="2" height="8" rx="0.5" fill="#E0292D" />
-                </svg>
-              </div>
-              <div>
-                <div className="font-oswald font-bold text-lg text-white leading-none tracking-wider">FILM<span className="text-fp-red">PRINT</span></div>
-                <div className="text-[9px] text-white/30 uppercase tracking-[0.2em] font-golos">Профессиональная печать</div>
-              </div>
+            <div className="flex items-center">
+              <img
+                src="https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/7f087863-9b26-41ce-a2cc-fa6861c14243.jpg"
+                alt="FilmPrint"
+                className="h-10 w-auto object-contain"
+                style={{ filter: "brightness(0) invert(1)" }}
+              />
             </div>
 
             <div className="flex flex-wrap gap-6">
