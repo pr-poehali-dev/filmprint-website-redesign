@@ -89,9 +89,9 @@ export default function HeroSection({ menuOpen, setMenuOpen, scrolled, scrollTo 
             </div>
 
             <h1 className={`font-oswald font-black text-6xl md:text-7xl lg:text-8xl uppercase leading-none mb-6 ${heroSection.inView ? "animate-fade-up animate-delay-100" : "opacity-0"}`}>
-              <span style={{ background: "linear-gradient(to right, #ffffff, rgba(255,255,255,0.35))", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>профессиональная</span><br />
-              <span style={{ background: "linear-gradient(to right, #E0292D, rgba(224,41,45,0.35))", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>широкоформатная</span><br />
-              <span style={{ background: "linear-gradient(to right, #ffffff, rgba(255,255,255,0.35))", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>печать</span>
+              <span style={{ background: "linear-gradient(to right, #ffffff, rgba(255,255,255,0.35))", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>Filmprint</span><br />
+              <span style={{ background: "linear-gradient(to right, #E0292D, rgba(224,41,45,0.35))", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>ваше единое окно</span><br />
+              <span style={{ background: "linear-gradient(to right, #ffffff, rgba(255,255,255,0.35))", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>в мире производства</span>
             </h1>
 
             <div className={`text-white/60 text-xl md:text-2xl font-golos leading-relaxed mb-10 max-w-xl flex flex-col gap-1 ${heroSection.inView ? "animate-fade-up animate-delay-200" : "opacity-0"}`}>
