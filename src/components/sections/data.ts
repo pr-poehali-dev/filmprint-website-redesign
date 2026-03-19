@@ -46,7 +46,7 @@ export const SERVICES = [
   },
   {
     icon: "FileImage",
-    title: "Печать плакатов",
+    title: "Плакаты и картины",
     description: "Высококачественная печать на фотобумаге, холсте и специальных материалах.",
     price: "от 350 ₽",
     tag: null,
