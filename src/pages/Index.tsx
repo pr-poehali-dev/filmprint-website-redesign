@@ -236,10 +236,9 @@ export default function Index() {
               <span className="text-white/90">печать.</span>
             </h1>
 
-            <p className={`text-white/60 text-lg md:text-xl font-golos max-w-xl mb-12 leading-relaxed ${heroSection.inView ? "animate-fade-up animate-delay-200" : "opacity-0"}`}>
-              Экспертный партнёр для киноиндустрии, бизнеса и частных клиентов. Помогаем выбрать лучшее решение для вашей задачи и бюджета.
-              <span className="block mt-2 text-fp-red font-semibold">Срок выполнения — от 1 рабочего дня.</span>
-            </p>
+            <p className={`text-white/60 text-lg md:text-xl font-golos max-w-xl mb-12 leading-relaxed ${heroSection.inView ? "animate-fade-up animate-delay-200" : "opacity-0"}`}>Ваше единое окно в мир производства.
+От наклеек до арт-объектов.
+Один подрядчик. Одна ответственность. Бесшовный результат.</p>
 
             <div className={`flex flex-wrap gap-4 ${heroSection.inView ? "animate-fade-up animate-delay-300" : "opacity-0"}`}>
               <button className="btn-red text-base" onClick={() => scrollTo("#contacts")}>
