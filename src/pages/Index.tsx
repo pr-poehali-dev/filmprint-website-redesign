@@ -264,7 +264,7 @@ export default function Index() {
         </div>
 
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/30 z-10">
-          <span className="text-xs uppercase tracking-widest font-golos">Прокрутите</span>
+          <span className="text-xs uppercase tracking-widest font-golos"></span>
           <Icon name="ChevronDown" size={20} className="animate-bounce" />
         </div>
       </section>
