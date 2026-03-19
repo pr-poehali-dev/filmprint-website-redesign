@@ -23,7 +23,7 @@ export default function ServicesSection({ activeService, setActiveService, scrol
           <div className={`mb-16 ${servicesSection.inView ? "animate-fade-up" : "opacity-0"}`}>
             <div className="section-label mb-4">Что мы делаем</div>
             <h2 className="font-oswald font-bold text-5xl md:text-6xl text-fp-black uppercase">
-              Наши <span className="text-gradient-red">услуги</span>
+              Производственные <span className="text-gradient-red">возможности</span>
             </h2>
           </div>
 
