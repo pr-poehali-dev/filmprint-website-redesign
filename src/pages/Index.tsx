@@ -160,10 +160,9 @@ export default function Index() {
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center cursor-pointer" onClick={() => scrollTo("#hero")}>
             <img
-              src="https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/7f087863-9b26-41ce-a2cc-fa6861c14243.jpg"
+              src="https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/logo-transparent.png"
               alt="FilmPrint"
               className="h-12 w-auto object-contain"
-              style={{ filter: "brightness(0) invert(1)" }}
             />
           </div>
 
@@ -652,10 +651,9 @@ export default function Index() {
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 mb-8">
             <div className="flex items-center">
               <img
-                src="https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/7f087863-9b26-41ce-a2cc-fa6861c14243.jpg"
+                src="https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/logo-transparent.png"
                 alt="FilmPrint"
                 className="h-10 w-auto object-contain"
-                style={{ filter: "brightness(0) invert(1)" }}
               />
             </div>
 
