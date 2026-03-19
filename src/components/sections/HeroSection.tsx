@@ -85,10 +85,14 @@ export default function HeroSection({ menuOpen, setMenuOpen, scrolled, scrollTo 
         <div ref={heroSection.ref} className="relative z-10 max-w-7xl mx-auto px-6 py-20">
           <div className="max-w-3xl">
             <div className={`mb-6 ${heroSection.inView ? "animate-fade-up" : "opacity-0"}`}>
-              <span className="text-fp-red font-oswald uppercase tracking-widest font-light text-sm" style={{ fontStretch: "condensed" }}>Профессиональная типография</span>
+              <span className="text-fp-red text-sm font-oswald uppercase tracking-widest" style={{ fontStretch: "condensed" }}>Профессиональная типография</span>
             </div>
 
-            <h1 className={`font-oswald font-black text-6xl md:text-7xl lg:text-8xl uppercase leading-none mb-6 ${heroSection.inView ? "animate-fade-up animate-delay-100" : "opacity-0"}`}>Профессиональная широкоформатная печать</h1>
+            <h1 className={`font-oswald font-black text-6xl md:text-7xl lg:text-8xl uppercase leading-none mb-6 ${heroSection.inView ? "animate-fade-up animate-delay-100" : "opacity-0"}`}>
+              <span style={{ background: "linear-gradient(to right, #ffffff, rgba(255,255,255,0.35))", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>Печать</span><br />
+              <span style={{ background: "linear-gradient(to right, #E0292D, rgba(224,41,45,0.35))", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>любого</span><br />
+              <span style={{ background: "linear-gradient(to right, #ffffff, rgba(255,255,255,0.35))", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>масштаба</span>
+            </h1>
 
             <p className={`text-white/60 text-xl md:text-2xl font-golos leading-relaxed mb-10 max-w-xl ${heroSection.inView ? "animate-fade-up animate-delay-200" : "opacity-0"}`}>
               От наклейки до кинодекорации — производим быстро, точно по макету, с гарантией качества
