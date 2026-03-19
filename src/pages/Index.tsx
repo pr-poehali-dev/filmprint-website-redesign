@@ -163,6 +163,9 @@ export default function Index() {
               src="https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/logo-transparent.png"
               alt="FilmPrint"
               className="h-12 w-auto object-contain"
+              style={{
+                filter: "drop-shadow(0 0 0.5px rgba(255,255,255,0.6)) drop-shadow(0 2px 8px rgba(0,0,0,0.5))"
+              }}
             />
           </div>
 
