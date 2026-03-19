@@ -236,8 +236,8 @@ export default function Index() {
               <span className="text-white/90">печать.</span>
             </h1>
 
-            <p className={`text-white/60 text-lg md:text-xl font-golos max-w-xl mb-12 leading-relaxed ${heroSection.inView ? "animate-fade-up animate-delay-200" : "opacity-0"}`}>Ваше единое окно в мир производства.
-От наклеек до арт-объектов.
+            <p className={`text-white/60 text-lg md:text-xl font-golos max-w-xl mb-12 leading-relaxed ${heroSection.inView ? "animate-fade-up animate-delay-200" : "opacity-0"}`}>Ваше единое окно в мир производства. 
+От наклеек до арт-объектов. 
 Один подрядчик. Одна ответственность. Бесшовный результат.</p>
 
             <div className={`flex flex-wrap gap-4 ${heroSection.inView ? "animate-fade-up animate-delay-300" : "opacity-0"}`}>
