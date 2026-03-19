@@ -19,10 +19,10 @@ export default function HeroSection({ scrollTo }: HeroSectionProps) {
           <div className="absolute inset-0 bg-gradient-to-r from-fp-black via-fp-black/80 to-transparent" />
         </div>
 
-        <div className="absolute right-0 top-0 bottom-0 w-8 hidden lg:flex flex-col overflow-hidden">
+        <div className="absolute right-0 top-0 bottom-0 w-24 hidden lg:flex flex-col overflow-hidden opacity-30">
           {Array.from({ length: 20 }).map((_, i) => (
-            <div key={i} className="flex-1 border-b border-fp-red/30 flex items-center justify-center">
-              <div className="w-2 h-4 rounded-sm bg-fp-red/40" />
+            <div key={i} className="flex-1 border-b border-fp-red/20 flex items-center justify-center">
+              <div className="w-3 h-6 rounded-sm bg-fp-red/30" />
             </div>
           ))}
         </div>
