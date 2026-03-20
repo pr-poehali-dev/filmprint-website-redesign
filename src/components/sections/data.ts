@@ -17,7 +17,7 @@ export const STATS = [
 
 export const SERVICES = [
   {
-    icon: "Printer",
+    icon: "Scaling",
     title: "Широкоформатная печать",
     description: "Баннеры, плакаты, стенды, оформление мероприятий — любой масштаб.",
     price: "от 800 ₽/м²",
@@ -25,7 +25,7 @@ export const SERVICES = [
     image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/files/88139b49-454b-4add-9016-df1c07585b60.jpg",
   },
   {
-    icon: "Image",
+    icon: "PaintRoller",
     title: "Интерьерная печать",
     description: "Печать на плёнке с ламинацией, фотообои, декоративные панели.",
     price: "от 1 320 ₽/м²",
@@ -33,7 +33,7 @@ export const SERVICES = [
     image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/files/8161d1d9-67e0-4d2c-90ac-9c2dcc342ba0.jpg",
   },
   {
-    icon: "Film",
+    icon: "Clapperboard",
     title: "Декорации и бутафория",
     description: "Декорации для кино и театра, мероприятий и фотозон, реквизит, крупные объекты.",
     price: "по запросу",
@@ -41,7 +41,7 @@ export const SERVICES = [
     image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/files/cf8bba3d-91e3-40ee-8d4c-1779850f6ca5.jpg",
   },
   {
-    icon: "Layers",
+    icon: "Box",
     title: "3D-печать",
     description: "Прототипы, макеты, объёмные элементы декора и бутафории.",
     price: "от 2 500 ₽",
@@ -49,7 +49,7 @@ export const SERVICES = [
     image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/files/0eae9889-c8fb-4a2c-8836-9c9436fd4d45.jpg",
   },
   {
-    icon: "FileImage",
+    icon: "Frame",
     title: "Плакаты и картины",
     description: "Высококачественная печать на фотобумаге, холсте и специальных материалах.",
     price: "от 350 ₽",
@@ -57,7 +57,7 @@ export const SERVICES = [
     image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/files/45846164-cc0b-4412-a090-8164ac617c84.jpg",
   },
   {
-    icon: "Tag",
+    icon: "StickyNote",
     title: "Таблички и наклейки",
     description: "Навигационные таблички, брендирование, оформление помещений.",
     price: "от 150 ₽",
