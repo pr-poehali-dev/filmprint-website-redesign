@@ -30,7 +30,7 @@ export const SERVICES = [
     description: "Печать на плёнке с ламинацией, фотообои, декоративные панели.",
     price: "от 1 320 ₽/м²",
     tag: null,
-    image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/files/6bcb5c77-e347-47b6-aa18-f98fb3d0e33d.jpg",
+    image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/files/7cbbf6e4-786e-4506-b42f-f4e666391002.jpg",
   },
   {
     icon: "Film",
