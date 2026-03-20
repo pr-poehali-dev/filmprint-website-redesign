@@ -17,7 +17,7 @@ export default function AboutSection({ scrollTo }: AboutSectionProps) {
             <div className={aboutSection.inView ? "animate-slide-in-left" : "opacity-0"}>
               <div className="section-label mb-4">О компании</div>
               <h2 className="font-oswald font-bold text-5xl md:text-6xl text-fp-black uppercase mb-8">
-                10 лет <span className="text-gradient-red">экспертизы</span>
+                6 лет <span className="text-gradient-red">экспертизы</span>
               </h2>
               <p className="text-gray-600 text-lg leading-relaxed mb-6">
                 FilmPrint — профессиональная типография с более чем 10-летним опытом работы. Мы специализируемся на широкоформатной и интерьерной печати, производстве декораций для кино и театра, 3D-печати.
