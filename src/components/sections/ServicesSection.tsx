@@ -1,6 +1,6 @@
 import Icon from "@/components/ui/icon";
 import { useInView } from "./useInView";
-import { SERVICES, PRICING, PORTFOLIO_ITEMS } from "./data";
+import { SERVICES, PORTFOLIO_ITEMS } from "./data";
 
 interface ServicesSectionProps {
   activeService: number | null;
@@ -10,7 +10,7 @@ interface ServicesSectionProps {
 
 export default function ServicesSection({ activeService, setActiveService, scrollTo }: ServicesSectionProps) {
   const servicesSection = useInView(0.1);
-  const pricingSection = useInView(0.1);
+
   const portfolioSection = useInView(0.1);
 
   return (
@@ -60,46 +60,6 @@ export default function ServicesSection({ activeService, setActiveService, scrol
           <div className={`mt-12 text-center ${servicesSection.inView ? "animate-fade-up animate-delay-700" : "opacity-0"}`}>
             <button className="btn-red" onClick={() => scrollTo("#contacts")}>
               <span>хочу креатив!</span>
-            </button>
-          </div>
-        </div>
-      </section>
-
-      {/* PRICING */}
-      <section id="pricing" className="py-24 bg-gray-50 relative overflow-hidden">
-        <div className="absolute right-0 top-1/4 w-[500px] h-[500px] rounded-full opacity-5"
-          style={{ background: "radial-gradient(circle, #E0292D 0%, transparent 70%)" }} />
-        <div ref={pricingSection.ref} className="max-w-7xl mx-auto px-6">
-          <div className={`mb-16 ${pricingSection.inView ? "animate-fade-up" : "opacity-0"}`}>
-            <div className="section-label mb-4">Прозрачные цены</div>
-            <h2 className="font-oswald font-bold text-5xl md:text-6xl text-fp-black uppercase">
-              Прайс-<span className="text-gradient-red">лист</span>
-            </h2>
-          </div>
-
-          <div className={`grid grid-cols-1 md:grid-cols-2 gap-4 ${pricingSection.inView ? "animate-fade-up animate-delay-200" : "opacity-0"}`}>
-            {PRICING.map((item) => (
-              <div key={item.name} className="bg-white rounded-sm border border-gray-100 p-6 flex items-start justify-between gap-4 card-hover group">
-                <div className="flex-1">
-                  <div className="font-golos font-semibold text-fp-black mb-1">{item.name}</div>
-                  <div className="text-gray-400 text-sm">{item.note}</div>
-                </div>
-                <div className="text-right flex-shrink-0">
-                  <div className="font-oswald font-bold text-fp-red text-lg whitespace-nowrap">{item.price}</div>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <div className={`mt-10 p-6 border border-fp-red/20 bg-fp-red/5 rounded-sm ${pricingSection.inView ? "animate-fade-up animate-delay-400" : "opacity-0"}`}>
-            <p className="text-gray-500 text-sm text-center">
-              * Итоговая стоимость зависит от объёма, материалов и сложности. Свяжитесь с нами для точного расчёта.
-            </p>
-          </div>
-
-          <div className={`mt-8 text-center ${pricingSection.inView ? "animate-fade-up animate-delay-500" : "opacity-0"}`}>
-            <button className="btn-red" onClick={() => scrollTo("#contacts")}>
-              <span>Получить точный расчёт</span>
             </button>
           </div>
         </div>

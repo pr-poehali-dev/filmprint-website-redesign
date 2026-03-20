@@ -2,7 +2,6 @@ export const HERO_IMAGE = "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8
 
 export const NAV_LINKS = [
   { label: "Услуги", href: "#services" },
-  { label: "Прайс", href: "#pricing" },
   { label: "Портфолио", href: "#portfolio" },
   { label: "О нас", href: "#about" },
   { label: "Контакты", href: "#contacts" },
