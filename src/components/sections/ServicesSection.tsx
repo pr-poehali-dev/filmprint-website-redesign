@@ -31,7 +31,7 @@ export default function ServicesSection({ activeService, setActiveService, scrol
             {SERVICES.map((service, i) => (
               <div
                 key={service.title}
-                className={`relative group rounded-sm overflow-hidden p-8 card-hover cursor-pointer min-h-[280px] flex flex-col justify-end ${servicesSection.inView ? `animate-fade-up animate-delay-${(i + 1) * 100}` : "opacity-0"} ${activeService === i ? "ring-2 ring-fp-red shadow-lg shadow-fp-red/10" : ""}`}
+                className={`relative group rounded-2xl overflow-hidden p-8 card-hover cursor-pointer min-h-[280px] flex flex-col justify-end ${servicesSection.inView ? `animate-fade-up animate-delay-${(i + 1) * 100}` : "opacity-0"} ${activeService === i ? "ring-2 ring-fp-red shadow-lg shadow-fp-red/10" : ""}`}
                 onClick={() => setActiveService(activeService === i ? null : i)}
               >
                 <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${service.image})` }} />
