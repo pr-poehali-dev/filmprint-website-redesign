@@ -42,8 +42,8 @@ export default function ServicesSection({ activeService, setActiveService, scrol
                   </div>
                 )}
                 <div className="relative z-10">
-                  <div className="w-12 h-12 rounded-sm bg-white/10 backdrop-blur-sm flex items-center justify-center mb-4">
-                    <Icon name={service.icon} size={24} className="text-fp-red" />
+                  <div className="w-16 h-16 rounded-xl bg-fp-red/20 backdrop-blur-md border border-fp-red/30 flex items-center justify-center mb-5 group-hover:bg-fp-red/30 group-hover:scale-110 transition-all duration-300 shadow-lg shadow-fp-red/10">
+                    <Icon name={service.icon} size={32} className="text-white drop-shadow-md" />
                   </div>
                   <h3 className="font-oswald font-semibold text-xl text-white mb-2 uppercase">{service.title}</h3>
                   <p className="text-white/70 text-sm leading-relaxed mb-4">{service.description}</p>
