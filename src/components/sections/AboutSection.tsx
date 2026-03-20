@@ -53,7 +53,7 @@ export default function AboutSection({ scrollTo }: AboutSectionProps) {
                 <div className="absolute inset-0 bg-gradient-to-t from-fp-black/60 to-transparent" />
               </div>
               <div className="absolute -bottom-6 -left-6 bg-fp-red text-white p-6 rounded-sm shadow-xl animate-pulse-glow">
-                <div className="font-oswald font-bold text-4xl">10+</div>
+                <div className="font-oswald font-bold text-4xl">6+</div>
                 <div className="text-white/80 text-sm uppercase tracking-wider">лет на рынке</div>
               </div>
               <div className="absolute -right-4 top-0 bottom-0 w-8 flex flex-col overflow-hidden">
