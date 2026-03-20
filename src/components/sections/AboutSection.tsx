@@ -65,6 +65,27 @@ export default function AboutSection({ scrollTo }: AboutSectionProps) {
               </div>
             </div>
           </div>
+          <div className={`mt-24 ${aboutSection.inView ? "animate-fade-up animate-delay-500" : "opacity-0"}`}>
+            <h3 className="font-oswald font-bold text-3xl md:text-4xl text-fp-black uppercase mb-12 text-center">
+              Почему клиенты <span className="text-gradient-red">выбирают нас</span>
+            </h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              {[
+                { icon: "Clock", title: "Сроки от 1 дня", desc: "Ходовые материалы всегда в наличии — запускаем производство сразу после согласования." },
+                { icon: "ShieldCheck", title: "Гарантия качества", desc: "Контроль на каждом этапе: от допечатной подготовки до финальной проверки изделия." },
+                { icon: "Handshake", title: "Индивидуальный подход", desc: "Подбираем оптимальное решение под задачу и бюджет, помогаем с макетами." },
+                { icon: "Truck", title: "Доставка по России", desc: "Отправляем заказы транспортными компаниями в любой город страны." },
+              ].map((item) => (
+                <div key={item.title} className="bg-gray-50 rounded-xl p-6 text-center group hover:bg-fp-red/5 transition-colors">
+                  <div className="w-14 h-14 rounded-xl bg-fp-red/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-fp-red/20 transition-colors">
+                    <Icon name={item.icon} size={28} className="text-fp-red" />
+                  </div>
+                  <h4 className="font-oswald font-semibold text-fp-black text-lg uppercase mb-2">{item.title}</h4>
+                  <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
     </>
