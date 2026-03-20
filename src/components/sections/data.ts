@@ -22,6 +22,7 @@ export const SERVICES = [
     description: "Баннеры, плакаты, стенды, оформление мероприятий — любой масштаб.",
     price: "от 800 ₽/м²",
     tag: "Популярное",
+    image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/files/88139b49-454b-4add-9016-df1c07585b60.jpg",
   },
   {
     icon: "Image",
@@ -29,6 +30,7 @@ export const SERVICES = [
     description: "Печать на плёнке с ламинацией, фотообои, декоративные панели.",
     price: "от 1 320 ₽/м²",
     tag: null,
+    image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/files/6bcb5c77-e347-47b6-aa18-f98fb3d0e33d.jpg",
   },
   {
     icon: "Film",
@@ -36,6 +38,7 @@ export const SERVICES = [
     description: "Декорации для кино и театра, реквизит, крупные объекты.",
     price: "по запросу",
     tag: "Кино",
+    image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/files/cf8bba3d-91e3-40ee-8d4c-1779850f6ca5.jpg",
   },
   {
     icon: "Layers",
@@ -43,6 +46,7 @@ export const SERVICES = [
     description: "Прототипы, макеты, объёмные элементы декора и бутафории.",
     price: "от 2 500 ₽",
     tag: null,
+    image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/files/0eae9889-c8fb-4a2c-8836-9c9436fd4d45.jpg",
   },
   {
     icon: "FileImage",
@@ -50,6 +54,7 @@ export const SERVICES = [
     description: "Высококачественная печать на фотобумаге, холсте и специальных материалах.",
     price: "от 350 ₽",
     tag: null,
+    image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/files/45846164-cc0b-4412-a090-8164ac617c84.jpg",
   },
   {
     icon: "Tag",
@@ -57,6 +62,7 @@ export const SERVICES = [
     description: "Навигационные таблички, брендирование, оформление помещений.",
     price: "от 150 ₽",
     tag: null,
+    image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/files/2d053ff2-a148-4ecb-877a-456358434960.jpg",
   },
 ];
 

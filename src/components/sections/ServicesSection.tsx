@@ -31,22 +31,26 @@ export default function ServicesSection({ activeService, setActiveService, scrol
             {SERVICES.map((service, i) => (
               <div
                 key={service.title}
-                className={`relative group bg-white border border-gray-100 rounded-sm p-8 card-hover cursor-pointer ${servicesSection.inView ? `animate-fade-up animate-delay-${(i + 1) * 100}` : "opacity-0"} ${activeService === i ? "border-fp-red shadow-lg shadow-fp-red/10" : ""}`}
+                className={`relative group rounded-sm overflow-hidden p-8 card-hover cursor-pointer min-h-[280px] flex flex-col justify-end ${servicesSection.inView ? `animate-fade-up animate-delay-${(i + 1) * 100}` : "opacity-0"} ${activeService === i ? "ring-2 ring-fp-red shadow-lg shadow-fp-red/10" : ""}`}
                 onClick={() => setActiveService(activeService === i ? null : i)}
               >
+                <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${service.image})` }} />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-black/30 group-hover:from-black/95 group-hover:via-black/70 group-hover:to-black/40 transition-all duration-300" />
                 {service.tag && (
-                  <div className="absolute top-4 right-4 bg-fp-red text-white text-xs font-oswald uppercase tracking-wider px-3 py-1 rounded-sm">
+                  <div className="absolute top-4 right-4 bg-fp-red text-white text-xs font-oswald uppercase tracking-wider px-3 py-1 rounded-sm z-10">
                     {service.tag}
                   </div>
                 )}
-                <div className="w-14 h-14 rounded-sm bg-fp-red/10 flex items-center justify-center mb-6 group-hover:bg-fp-red/20 transition-colors">
-                  <Icon name={service.icon} size={28} className="text-fp-red" />
-                </div>
-                <h3 className="font-oswald font-semibold text-xl text-fp-black mb-3 uppercase">{service.title}</h3>
-                <p className="text-gray-500 text-sm leading-relaxed mb-4">{service.description}</p>
-                <div className="flex items-center justify-end">
-                  <div className="w-8 h-8 rounded-full border border-gray-200 flex items-center justify-center group-hover:border-fp-red group-hover:bg-fp-red transition-all">
-                    <Icon name="ArrowRight" size={14} className="text-gray-400 group-hover:text-white transition-colors" />
+                <div className="relative z-10">
+                  <div className="w-12 h-12 rounded-sm bg-white/10 backdrop-blur-sm flex items-center justify-center mb-4">
+                    <Icon name={service.icon} size={24} className="text-fp-red" />
+                  </div>
+                  <h3 className="font-oswald font-semibold text-xl text-white mb-2 uppercase">{service.title}</h3>
+                  <p className="text-white/70 text-sm leading-relaxed mb-4">{service.description}</p>
+                  <div className="flex items-center justify-end">
+                    <div className="w-8 h-8 rounded-full border border-white/30 flex items-center justify-center group-hover:border-fp-red group-hover:bg-fp-red transition-all">
+                      <Icon name="ArrowRight" size={14} className="text-white/60 group-hover:text-white transition-colors" />
+                    </div>
                   </div>
                 </div>
               </div>
