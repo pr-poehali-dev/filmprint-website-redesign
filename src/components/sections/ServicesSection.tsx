@@ -43,9 +43,8 @@ export default function ServicesSection({ activeService, setActiveService, scrol
                   <Icon name={service.icon} size={28} className="text-fp-red" />
                 </div>
                 <h3 className="font-oswald font-semibold text-xl text-fp-black mb-3 uppercase">{service.title}</h3>
-                <p className="text-gray-500 text-sm leading-relaxed mb-6">{service.description}</p>
-                <div className="flex items-center justify-between">
-                  <div className="font-oswald font-bold text-fp-red text-lg">{service.price}</div>
+                <p className="text-gray-500 text-sm leading-relaxed mb-4">{service.description}</p>
+                <div className="flex items-center justify-end">
                   <div className="w-8 h-8 rounded-full border border-gray-200 flex items-center justify-center group-hover:border-fp-red group-hover:bg-fp-red transition-all">
                     <Icon name="ArrowRight" size={14} className="text-gray-400 group-hover:text-white transition-colors" />
                   </div>
