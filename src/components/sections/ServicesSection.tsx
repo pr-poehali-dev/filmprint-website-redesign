@@ -59,7 +59,7 @@ export default function ServicesSection({ activeService, setActiveService, scrol
 
           <div className={`mt-12 text-center ${servicesSection.inView ? "animate-fade-up animate-delay-700" : "opacity-0"}`}>
             <button className="btn-red" onClick={() => scrollTo("#contacts")}>
-              <span>Обсудить проект</span>
+              <span>хочу креатив!</span>
             </button>
           </div>
         </div>
