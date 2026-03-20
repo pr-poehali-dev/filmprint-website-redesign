@@ -35,7 +35,7 @@ export const SERVICES = [
   {
     icon: "Film",
     title: "Декорации и бутафория",
-    description: "Декорации для кино и театра, реквизит, крупные объекты.",
+    description: "Декорации для кино и театра, мероприятий и фотозон, реквизит, крупные объекты.",
     price: "по запросу",
     tag: "Кино",
     image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/files/cf8bba3d-91e3-40ee-8d4c-1779850f6ca5.jpg",
