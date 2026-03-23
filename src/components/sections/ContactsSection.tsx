@@ -18,9 +18,7 @@ export default function ContactsSection({ scrollTo }: ContactsSectionProps) {
         <div ref={contactsSection.ref} className="max-w-7xl mx-auto px-6">
           <div className={`mb-16 ${contactsSection.inView ? "animate-fade-up" : "opacity-0"}`}>
             <div className="section-label mb-4">Свяжитесь с нами</div>
-            <h2 className="font-oswald font-bold text-5xl md:text-6xl text-white uppercase">
-              Конта<span className="text-gradient-red">кты</span>
-            </h2>
+            <h2 className="font-oswald font-bold text-5xl md:text-6xl uppercase text-red-700">контакты</h2>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
@@ -58,8 +56,8 @@ export default function ContactsSection({ scrollTo }: ContactsSectionProps) {
                   <Icon name="Send" size={22} className="text-blue-400" />
                 </div>
                 <div>
-                  <div className="text-white font-oswald font-semibold uppercase tracking-wider">Telegram</div>
-                  <div className="text-white/40 text-sm">Напишите нам в мессенджер</div>
+                  <div className="text-white font-oswald font-semibold uppercase tracking-wider rounded-0 py-0">Telegram</div>
+                  <div className="text-white/40 text-sm">Скорость ответа - до 3 мин</div>
                 </div>
                 <Icon name="ArrowRight" size={18} className="text-white/30 group-hover:text-fp-red transition-colors ml-auto" />
               </a>
@@ -136,9 +134,9 @@ export default function ContactsSection({ scrollTo }: ContactsSectionProps) {
           <div className="h-px bg-white/5 mb-8" />
 
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-white/30 text-xs font-golos">
-            <div>© 2024 ФильмПринт. Все права защищены.</div>
+            <div>© 2026 ФильмПринт. </div>
             <div>ИП Иванов И.И., ОГРНИП 123456789012345, ИНН 123456789012</div>
-            <div>г. Москва, ул. Примерная, д. 1</div>
+            <div>г. Москва, ул. Краснобогатырская, д. 2. 2 стр. 53</div>
           </div>
         </div>
       </footer>

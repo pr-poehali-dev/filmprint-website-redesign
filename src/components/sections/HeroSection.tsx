@@ -76,22 +76,22 @@ export default function HeroSection({ menuOpen, setMenuOpen, scrolled, scrollTo 
 
         <div className="absolute right-0 top-0 bottom-0 w-24 hidden lg:flex flex-col opacity-30">
           {Array.from({ length: 12 }).map((_, i) => (
-            <div key={i} className="flex-1 border-b border-fp-red/30 flex items-center justify-center">
+            <div key={i} className="flex-1 border-b border-fp-red/30 flex items-center justify-center px-0 mx-0 bg-transparent rounded-0">
               <div className="w-2 h-6 rounded-sm bg-fp-red/40" />
             </div>
           ))}
         </div>
 
-        <div ref={heroSection.ref} className="relative z-10 max-w-7xl mx-auto px-6 py-20">
+        <div ref={heroSection.ref} className="relative z-10 max-w-7xl px-[124px] mx-0 my-0 py-[175px]">
           <div className="max-w-3xl">
             <div className={`mb-6 ${heroSection.inView ? "animate-fade-up" : "opacity-0"}`}>
               <span className="text-sm font-oswald uppercase tracking-[0.3em] font-medium" style={{ fontStretch: "condensed", background: "linear-gradient(to right, #E0292D, rgba(224,41,45,0.65))", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>От наклеек до арт-объектов</span>
             </div>
 
             <h1 className={`font-oswald font-black text-[1.75rem] sm:text-4xl md:text-6xl lg:text-8xl uppercase leading-none mb-6 ${heroSection.inView ? "animate-fade-up animate-delay-100" : "opacity-0"}`}>
-              <span style={{ background: "linear-gradient(to right, #ffffff, rgba(255,255,255,0.35))", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>Filprint</span><br />
-              <span style={{ background: "linear-gradient(to right, #E0292D, rgba(224,41,45,0.35))", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>ваше единое окно</span><br />
-              <span style={{ background: "linear-gradient(to right, #ffffff, rgba(255,255,255,0.35))", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>в мире производства</span>
+              <span style={{ background: "linear-gradient(to right, #ffffff, rgba(255,255,255,0.35))", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>ФильмПринт </span><br />
+              <span style={{ background: "linear-gradient(to right, #E0292D, rgba(224,41,45,0.35))", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>Ваше единое окно</span><br />
+              <span style={{ background: "linear-gradient(to right, #ffffff, rgba(255,255,255,0.35))", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>в мире произво</span>
             </h1>
 
             <div className={`text-white/60 text-base md:text-lg font-golos leading-relaxed mb-10 max-w-xl flex flex-col gap-1 ${heroSection.inView ? "animate-fade-up animate-delay-200" : "opacity-0"}`}>

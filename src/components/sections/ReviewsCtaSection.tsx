@@ -16,9 +16,7 @@ export default function ReviewsCtaSection({ scrollTo }: ReviewsCtaSectionProps) 
         <div ref={reviewsSection.ref} className="max-w-7xl mx-auto px-6">
           <div className={`mb-16 text-center ${reviewsSection.inView ? "animate-fade-up" : "opacity-0"}`}>
             <div className="section-label mb-4 text-center">Что говорят клиенты</div>
-            <h2 className="font-oswald font-bold text-5xl md:text-6xl text-fp-black uppercase">
-              От<span className="text-gradient-red">зывы</span>
-            </h2>
+            <h2 className="font-oswald font-bold text-5xl md:text-6xl text-fp-black uppercase">отзывы</h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -32,7 +30,7 @@ export default function ReviewsCtaSection({ scrollTo }: ReviewsCtaSectionProps) 
                     <Icon key={j} name="Star" size={16} className="text-fp-red" style={{ fill: "#E0292D" }} />
                   ))}
                 </div>
-                <p className="text-gray-600 leading-relaxed mb-6 italic">"{review.text}"</p>
+                <p className="text-gray-600 leading-relaxed mb-6 italic">Очень приятно работать с профессионалами. Айвар один из таких людей! Всегда все очень  четко, даже в самые сжатые сроки, есть личностное отношение, что очень ценно в наше время. Качество выше похвал. Рада, что открыла для себя такого специалиста!</p>
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-full bg-fp-red/10 flex items-center justify-center">
                     <Icon name="User" size={18} className="text-fp-red" />

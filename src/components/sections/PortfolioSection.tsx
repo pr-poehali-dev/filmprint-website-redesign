@@ -10,9 +10,7 @@ export default function PortfolioSection() {
       <div ref={portfolioSection.ref} className="max-w-7xl mx-auto px-6">
         <div className={`mb-16 ${portfolioSection.inView ? "animate-fade-up" : "opacity-0"}`}>
           <div className="section-label mb-4">Наши работы</div>
-          <h2 className="font-oswald font-bold text-5xl md:text-6xl text-white uppercase">
-            Порт<span className="text-gradient-red">фолио</span>
-          </h2>
+          <h2 className="font-oswald font-bold text-5xl md:text-6xl text-white uppercase">портфолио</h2>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
