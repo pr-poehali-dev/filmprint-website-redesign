@@ -1,7 +1,10 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import Icon from "@/components/ui/icon";
 import { useInView } from "./useInView";
 import { NAV_LINKS, SERVICES } from "./data";
+
+const SEND_CONTACT_URL = "https://functions.poehali.dev/77139f1c-eecb-4bb1-b009-103947a29122";
 
 interface ContactsSectionProps {
   scrollTo: (href: string) => void;
@@ -9,6 +12,33 @@ interface ContactsSectionProps {
 
 export default function ContactsSection({ scrollTo }: ContactsSectionProps) {
   const contactsSection = useInView(0.1);
+  const [formData, setFormData] = useState({ name: "", contact: "", service: "", message: "" });
+  const [sending, setSending] = useState(false);
+  const [sent, setSent] = useState(false);
+  const [error, setError] = useState("");
+
+  const handleSubmit = async () => {
+    if (!formData.name.trim() || !formData.contact.trim()) {
+      setError("Заполните имя и контакт");
+      return;
+    }
+    setSending(true);
+    setError("");
+    try {
+      const res = await fetch(SEND_CONTACT_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+      if (!res.ok) throw new Error();
+      setSent(true);
+      setFormData({ name: "", contact: "", service: "", message: "" });
+    } catch {
+      setError("Не удалось отправить. Позвоните нам: +7 (965) 354-82-82");
+    } finally {
+      setSending(false);
+    }
+  };
 
   return (
     <>
@@ -67,44 +97,69 @@ export default function ContactsSection({ scrollTo }: ContactsSectionProps) {
             <div className={contactsSection.inView ? "animate-fade-up animate-delay-300" : "opacity-0"}>
               <div className="bg-white/5 border border-white/10 rounded-sm p-8">
                 <h3 className="font-oswald font-semibold text-white text-xl uppercase mb-6">Оставьте заявку</h3>
-                <div className="space-y-4">
-                  <div>
-                    <label className="text-white/40 text-xs uppercase tracking-wider block mb-2">Ваше имя</label>
-                    <input
-                      type="text"
-                      placeholder="Иван Иванов"
-                      className="w-full bg-white/5 border border-white/10 rounded-sm px-4 py-3 text-white placeholder:text-white/20 focus:outline-none focus:border-fp-red transition-colors font-golos"
-                    />
+
+                {sent ? (
+                  <div className="text-center py-8">
+                    <div className="w-16 h-16 rounded-full bg-green-500/20 border border-green-500/30 flex items-center justify-center mx-auto mb-4">
+                      <Icon name="Check" size={32} className="text-green-400" />
+                    </div>
+                    <p className="text-white font-golos font-semibold text-lg mb-2">Заявка отправлена!</p>
+                    <p className="text-white/50 font-golos text-sm">Мы свяжемся с вами в ближайшее время</p>
+                    <button className="btn-red mt-6 text-sm py-2 px-6" onClick={() => setSent(false)}>
+                      <span>Отправить ещё</span>
+                    </button>
                   </div>
-                  <div>
-                    <label className="text-white/40 text-xs uppercase tracking-wider block mb-2">Телефон или Email</label>
-                    <input
-                      type="text"
-                      placeholder="+7 (___) ___-__-__"
-                      className="w-full bg-white/5 border border-white/10 rounded-sm px-4 py-3 text-white placeholder:text-white/20 focus:outline-none focus:border-fp-red transition-colors font-golos"
-                    />
+                ) : (
+                  <div className="space-y-4">
+                    <div>
+                      <label className="text-white/40 text-xs uppercase tracking-wider block mb-2">Ваше имя</label>
+                      <input
+                        type="text"
+                        placeholder="Иван Иванов"
+                        value={formData.name}
+                        onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                        className="w-full bg-white/5 border border-white/10 rounded-sm px-4 py-3 text-white placeholder:text-white/20 focus:outline-none focus:border-fp-red transition-colors font-golos"
+                      />
+                    </div>
+                    <div>
+                      <label className="text-white/40 text-xs uppercase tracking-wider block mb-2">Телефон или Email</label>
+                      <input
+                        type="text"
+                        placeholder="+7 (___) ___-__-__"
+                        value={formData.contact}
+                        onChange={(e) => setFormData({ ...formData, contact: e.target.value })}
+                        className="w-full bg-white/5 border border-white/10 rounded-sm px-4 py-3 text-white placeholder:text-white/20 focus:outline-none focus:border-fp-red transition-colors font-golos"
+                      />
+                    </div>
+                    <div>
+                      <label className="text-white/40 text-xs uppercase tracking-wider block mb-2">Услуга</label>
+                      <select
+                        value={formData.service}
+                        onChange={(e) => setFormData({ ...formData, service: e.target.value })}
+                        className="w-full bg-white/5 border border-white/10 rounded-sm px-4 py-3 text-white/60 focus:outline-none focus:border-fp-red transition-colors font-golos appearance-none"
+                      >
+                        <option value="" className="bg-fp-black">Выберите услугу</option>
+                        {SERVICES.map(s => (
+                          <option key={s.title} value={s.title} className="bg-fp-black">{s.title}</option>
+                        ))}
+                      </select>
+                    </div>
+                    <div>
+                      <label className="text-white/40 text-xs uppercase tracking-wider block mb-2">Описание проекта</label>
+                      <textarea
+                        rows={4}
+                        placeholder="Расскажите о вашей задаче..."
+                        value={formData.message}
+                        onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                        className="w-full bg-white/5 border border-white/10 rounded-sm px-4 py-3 text-white placeholder:text-white/20 focus:outline-none focus:border-fp-red transition-colors resize-none font-golos"
+                      />
+                    </div>
+                    {error && <p className="text-red-400 text-sm font-golos">{error}</p>}
+                    <button className="btn-red w-full text-base mt-2" onClick={handleSubmit} disabled={sending}>
+                      <span>{sending ? "Отправка..." : "Отправить заявку"}</span>
+                    </button>
                   </div>
-                  <div>
-                    <label className="text-white/40 text-xs uppercase tracking-wider block mb-2">Услуга</label>
-                    <select className="w-full bg-white/5 border border-white/10 rounded-sm px-4 py-3 text-white/60 focus:outline-none focus:border-fp-red transition-colors font-golos appearance-none">
-                      <option value="" className="bg-fp-black">Выберите услугу</option>
-                      {SERVICES.map(s => (
-                        <option key={s.title} value={s.title} className="bg-fp-black">{s.title}</option>
-                      ))}
-                    </select>
-                  </div>
-                  <div>
-                    <label className="text-white/40 text-xs uppercase tracking-wider block mb-2">Описание проекта</label>
-                    <textarea
-                      rows={4}
-                      placeholder="Расскажите о вашей задаче..."
-                      className="w-full bg-white/5 border border-white/10 rounded-sm px-4 py-3 text-white placeholder:text-white/20 focus:outline-none focus:border-fp-red transition-colors resize-none font-golos"
-                    />
-                  </div>
-                  <button className="btn-red w-full text-base mt-2">
-                    <span>Отправить заявку</span>
-                  </button>
-                </div>
+                )}
               </div>
             </div>
           </div>
