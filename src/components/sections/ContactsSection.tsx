@@ -119,7 +119,7 @@ export default function ContactsSection({ scrollTo }: ContactsSectionProps) {
             <div className="flex items-center">
               <img
                 src="https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/logo-transparent.png"
-                alt="FilmPrint"
+                alt="ФильмПринт"
                 className="h-10 w-auto object-contain"
               />
             </div>
@@ -136,7 +136,7 @@ export default function ContactsSection({ scrollTo }: ContactsSectionProps) {
           <div className="h-px bg-white/5 mb-8" />
 
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-white/30 text-xs font-golos">
-            <div>© 2024 FilmPrint. Все права защищены.</div>
+            <div>© 2024 ФильмПринт. Все права защищены.</div>
             <div>ИП Иванов И.И., ОГРНИП 123456789012345, ИНН 123456789012</div>
             <div>г. Москва, ул. Примерная, д. 1</div>
           </div>

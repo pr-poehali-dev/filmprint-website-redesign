@@ -20,7 +20,7 @@ export default function AboutSection({ scrollTo }: AboutSectionProps) {
                 6 лет <span className="text-gradient-red">экспертизы</span>
               </h2>
               <p className="text-gray-600 text-lg leading-relaxed mb-6">
-                FilmPrint — профессиональная типография с более чем 10-летним опытом работы. Мы специализируемся на широкоформатной и интерьерной печати, производстве декораций для кино и театра, 3D-печати.
+                ФильмПринт — профессиональная типография с более чем 6-летним опытом работы. Мы специализируемся на широкоформатной и интерьерной печати, производстве декораций для кино и театра, 3D-печати.
               </p>
               <p className="text-gray-600 leading-relaxed mb-8">
                 Работаем на современном европейском оборудовании, используем качественные расходные материалы. Обслуживаем киностудии, ивент-агентства, корпоративных клиентов и частных заказчиков по всей России.
@@ -49,7 +49,7 @@ export default function AboutSection({ scrollTo }: AboutSectionProps) {
 
             <div className={`relative ${aboutSection.inView ? "animate-fade-up animate-delay-300" : "opacity-0"}`}>
               <div className="relative rounded-sm overflow-hidden">
-                <img src={HERO_IMAGE} alt="Производство FilmPrint" className="w-full h-[500px] object-cover" />
+                <img src={HERO_IMAGE} alt="Производство ФильмПринт" className="w-full h-[500px] object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-fp-black/60 to-transparent" />
               </div>
               <div className="absolute -bottom-6 -left-6 bg-fp-red text-white p-6 rounded-sm shadow-xl animate-pulse-glow">

@@ -21,7 +21,7 @@ export default function HeroSection({ menuOpen, setMenuOpen, scrolled, scrollTo 
           <div className="flex items-center cursor-pointer" onClick={() => scrollTo("#hero")}>
             <img
               src="https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/logo-transparent.png"
-              alt="FilmPrint"
+              alt="ФильмПринт"
               className="h-12 w-auto object-contain"
               style={{
                 filter: "drop-shadow(0 0 1px rgba(255,255,255,0.8)) drop-shadow(0 0 1.5px rgba(255,255,255,0.5)) drop-shadow(0 2px 8px rgba(0,0,0,0.5))"
@@ -70,7 +70,7 @@ export default function HeroSection({ menuOpen, setMenuOpen, scrolled, scrollTo 
       {/* HERO */}
       <section id="hero" className="relative min-h-screen flex items-center bg-gradient-hero bg-noise overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img src={HERO_IMAGE} alt="FilmPrint производство" className="w-full h-full object-cover opacity-20" />
+          <img src={HERO_IMAGE} alt="ФильмПринт производство" className="w-full h-full object-cover opacity-20" />
           <div className="absolute inset-0 bg-gradient-to-r from-fp-black via-fp-black/80 to-transparent" />
         </div>
 
