@@ -30,7 +30,7 @@ export default function ReviewsCtaSection({ scrollTo }: ReviewsCtaSectionProps) 
                     <Icon key={j} name="Star" size={16} className="text-fp-red" style={{ fill: "#E0292D" }} />
                   ))}
                 </div>
-                <p className="text-gray-600 leading-relaxed mb-6 italic">Очень приятно работать с профессионалами. Айвар один из таких людей! Всегда все очень  четко, даже в самые сжатые сроки, есть личностное отношение, что очень ценно в наше время. Качество выше похвал. Рада, что открыла для себя такого специалиста!</p>
+                <p className="text-gray-600 leading-relaxed mb-6 italic">В первую очередь привлекает широкий спектр услуг, от печати наклеек до изготовление бутафории. Во-вторых качество печати, при получении заказов никогда не сомневаешься в высоком уровне изготовления , в кадре всегда печать смотрится красиво. В-третьих, лояльная команда типографии, всегда идут на встречу по срокам и помогают реализовать творческие идеи.</p>
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-full bg-fp-red/10 flex items-center justify-center">
                     <Icon name="User" size={18} className="text-fp-red" />

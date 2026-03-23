@@ -135,7 +135,7 @@ export default function ContactsSection({ scrollTo }: ContactsSectionProps) {
 
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-white/30 text-xs font-golos">
             <div>© 2026 ФильмПринт. </div>
-            <div>ИП Иванов И.И., ОГРНИП 123456789012345, ИНН 123456789012</div>
+            <div>ИП Якубов Айвар Дамирович, ОГРНИП 311774623600930, ИНН 771475423846</div>
             <div>г. Москва, ул. Краснобогатырская, д. 2. 2 стр. 53</div>
           </div>
         </div>

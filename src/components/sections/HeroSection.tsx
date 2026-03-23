@@ -38,9 +38,7 @@ export default function HeroSection({ menuOpen, setMenuOpen, scrolled, scrollTo 
           </nav>
 
           <div className="hidden lg:flex items-center gap-4">
-            <a href="tel:+79999999999" className="text-white/70 hover:text-white transition-colors text-sm font-golos">
-              +7 (999) 999-99-99
-            </a>
+            <a href="tel:+79999999999" className="text-white/70 hover:text-white transition-colors text-sm font-golos">+7 (965) 354-82-82</a>
             <button className="btn-red text-sm py-3 px-6" onClick={() => scrollTo("#contacts")}>
               <span>Получить расчёт</span>
             </button>
@@ -82,7 +80,7 @@ export default function HeroSection({ menuOpen, setMenuOpen, scrolled, scrollTo 
           ))}
         </div>
 
-        <div ref={heroSection.ref} className="relative z-10 max-w-7xl px-[124px] mx-0 my-0 py-[175px]">
+        <div ref={heroSection.ref} className="relative z-10 max-w-7xl my-0 py-[175px] px-[150px] mx-0">
           <div className="max-w-3xl">
             <div className={`mb-6 ${heroSection.inView ? "animate-fade-up" : "opacity-0"}`}>
               <span className="text-sm font-oswald uppercase tracking-[0.3em] font-medium" style={{ fontStretch: "condensed", background: "linear-gradient(to right, #E0292D, rgba(224,41,45,0.65))", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>От наклеек до арт-объектов</span>
