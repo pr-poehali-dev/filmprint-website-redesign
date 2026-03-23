@@ -49,71 +49,68 @@ export default function ReviewsCtaSection({ scrollTo }: ReviewsCtaSectionProps) 
           </div>
 
           <div className={`relative ${reviewsSection.inView ? "animate-fade-up animate-delay-300" : "opacity-0"}`}>
-            <div className="max-w-4xl mx-auto">
-              <div className="relative overflow-hidden">
-                <div
-                  className="flex transition-transform duration-500 ease-out"
-                  style={{ transform: `translateX(-${current * 100}%)` }}
-                >
-                  {REVIEWS.map((review) => (
-                    <div key={review.name} className="w-full flex-shrink-0 px-4">
-                      <div className="bg-white rounded-sm p-10 md:p-14 border border-gray-100 relative">
-                        <div className="absolute top-8 right-10 text-fp-red/10">
-                          <Icon name="Quote" size={64} />
+            <div className="relative overflow-hidden">
+              <div
+                className="flex transition-transform duration-700 ease-out"
+                style={{ transform: `translateX(-${current * 100}%)` }}
+              >
+                {REVIEWS.map((review) => (
+                  <div key={review.name} className="w-full flex-shrink-0 px-2">
+                    <div className="bg-white rounded-sm border border-gray-200 flex flex-col md:flex-row overflow-hidden">
+                      <div className="md:w-56 flex-shrink-0 bg-fp-red flex flex-col items-center justify-center p-8 text-center">
+                        <div className="w-16 h-16 rounded-full bg-white/20 flex items-center justify-center mb-4">
+                          <span className="text-white font-oswald font-bold text-2xl">
+                            {review.name.charAt(0)}
+                          </span>
                         </div>
-                        <div className="flex gap-1 mb-6">
+                        <div className="font-oswald font-semibold text-white text-base">{review.name}</div>
+                        <div className="flex gap-1 mt-3">
                           {Array.from({ length: review.stars }).map((_, j) => (
-                            <Icon key={j} name="Star" size={18} className="text-fp-red" style={{ fill: "#E0292D" }} />
+                            <Icon key={j} name="Star" size={14} className="text-white" style={{ fill: "#fff" }} />
                           ))}
                         </div>
-                        <p className="text-gray-600 text-lg leading-relaxed mb-8 relative z-10">{review.text}</p>
-                        <div className="flex items-center gap-4">
-                          <div className="w-12 h-12 rounded-full bg-fp-red flex items-center justify-center">
-                            <span className="text-white font-oswald font-bold text-lg">
-                              {review.name.charAt(0)}
-                            </span>
-                          </div>
-                          <div>
-                            <div className="font-oswald font-semibold text-fp-black text-base">{review.name}</div>
-                            <div className="text-gray-400 text-sm">{review.role}</div>
-                          </div>
+                      </div>
+                      <div className="flex-1 p-8 md:p-10 flex flex-col justify-center relative">
+                        <div className="absolute top-6 right-8 text-fp-red/10">
+                          <Icon name="Quote" size={48} />
                         </div>
+                        <p className="text-gray-600 text-base leading-relaxed relative z-10">{review.text}</p>
                       </div>
                     </div>
-                  ))}
-                </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="flex items-center justify-center gap-6 mt-10">
+              <button
+                onClick={() => handleArrowClick("prev")}
+                className="w-12 h-12 rounded-full border-2 border-gray-200 flex items-center justify-center hover:border-fp-red hover:text-fp-red transition-colors"
+                aria-label="Предыдущий отзыв"
+              >
+                <Icon name="ChevronLeft" size={20} />
+              </button>
+
+              <div className="flex gap-2">
+                {REVIEWS.map((_, i) => (
+                  <button
+                    key={i}
+                    onClick={() => handleDotClick(i)}
+                    className={`h-2 rounded-full transition-all duration-300 ${
+                      i === current ? "w-8 bg-fp-red" : "w-2 bg-gray-300 hover:bg-gray-400"
+                    }`}
+                    aria-label={`Отзыв ${i + 1}`}
+                  />
+                ))}
               </div>
 
-              <div className="flex items-center justify-center gap-6 mt-10">
-                <button
-                  onClick={() => handleArrowClick("prev")}
-                  className="w-12 h-12 rounded-full border-2 border-gray-200 flex items-center justify-center hover:border-fp-red hover:text-fp-red transition-colors"
-                  aria-label="Предыдущий отзыв"
-                >
-                  <Icon name="ChevronLeft" size={20} />
-                </button>
-
-                <div className="flex gap-2">
-                  {REVIEWS.map((_, i) => (
-                    <button
-                      key={i}
-                      onClick={() => handleDotClick(i)}
-                      className={`h-2 rounded-full transition-all duration-300 ${
-                        i === current ? "w-8 bg-fp-red" : "w-2 bg-gray-300 hover:bg-gray-400"
-                      }`}
-                      aria-label={`Отзыв ${i + 1}`}
-                    />
-                  ))}
-                </div>
-
-                <button
-                  onClick={() => handleArrowClick("next")}
-                  className="w-12 h-12 rounded-full border-2 border-gray-200 flex items-center justify-center hover:border-fp-red hover:text-fp-red transition-colors"
-                  aria-label="Следующий отзыв"
-                >
-                  <Icon name="ChevronRight" size={20} />
-                </button>
-              </div>
+              <button
+                onClick={() => handleArrowClick("next")}
+                className="w-12 h-12 rounded-full border-2 border-gray-200 flex items-center justify-center hover:border-fp-red hover:text-fp-red transition-colors"
+                aria-label="Следующий отзыв"
+              >
+                <Icon name="ChevronRight" size={20} />
+              </button>
             </div>
           </div>
         </div>
