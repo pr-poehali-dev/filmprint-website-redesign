@@ -24,10 +24,10 @@ export default function AboutSection({ scrollTo }: AboutSectionProps) {
 
               <div className="grid grid-cols-2 gap-6 mb-10">
                 {[
-                  { icon: "Monitor", label: "Европейское оборудование" },
-                  { icon: "Award", label: "Сертифицированные материалы" },
+                  { icon: "Printer", label: "Профессиональное оборудование" },
+                  { icon: "Gem", label: "Качественные материалы" },
                   { icon: "Users", label: "Опытная команда" },
-                  { icon: "MapPin", label: "Работаем по всей России" },
+                  { icon: "Layers", label: "Работаем с любыми объёмами" },
                 ].map((item) => (
                   <div key={item.label} className="flex items-center gap-3">
                     <div className="w-10 h-10 rounded-sm bg-fp-red/10 flex items-center justify-center flex-shrink-0">
