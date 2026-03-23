@@ -1,3 +1,4 @@
+import { useState, useEffect, useCallback } from "react";
 import Icon from "@/components/ui/icon";
 import { useInView } from "./useInView";
 import { REVIEWS } from "./data";
@@ -8,6 +9,34 @@ interface ReviewsCtaSectionProps {
 
 export default function ReviewsCtaSection({ scrollTo }: ReviewsCtaSectionProps) {
   const reviewsSection = useInView(0.1);
+  const [current, setCurrent] = useState(0);
+  const [isAutoplay, setIsAutoplay] = useState(true);
+
+  const total = REVIEWS.length;
+
+  const next = useCallback(() => {
+    setCurrent((prev) => (prev + 1) % total);
+  }, [total]);
+
+  const prev = useCallback(() => {
+    setCurrent((prev) => (prev - 1 + total) % total);
+  }, [total]);
+
+  useEffect(() => {
+    if (!isAutoplay) return;
+    const timer = setInterval(next, 6000);
+    return () => clearInterval(timer);
+  }, [isAutoplay, next]);
+
+  const handleDotClick = (index: number) => {
+    setCurrent(index);
+    setIsAutoplay(false);
+  };
+
+  const handleArrowClick = (direction: "prev" | "next") => {
+    if (direction === "prev") { prev(); } else { next(); }
+    setIsAutoplay(false);
+  };
 
   return (
     <>
@@ -19,29 +48,73 @@ export default function ReviewsCtaSection({ scrollTo }: ReviewsCtaSectionProps) 
             <h2 className="font-oswald font-bold text-5xl md:text-6xl text-fp-black uppercase">отзывы</h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {REVIEWS.map((review, i) => (
-              <div
-                key={review.name}
-                className={`bg-white rounded-sm p-8 card-hover border border-gray-100 ${reviewsSection.inView ? `animate-fade-up animate-delay-${(i + 1) * 200}` : "opacity-0"}`}
-              >
-                <div className="flex gap-1 mb-6">
-                  {Array.from({ length: review.stars }).map((_, j) => (
-                    <Icon key={j} name="Star" size={16} className="text-fp-red" style={{ fill: "#E0292D" }} />
+          <div className={`relative ${reviewsSection.inView ? "animate-fade-up animate-delay-300" : "opacity-0"}`}>
+            <div className="max-w-4xl mx-auto">
+              <div className="relative overflow-hidden">
+                <div
+                  className="flex transition-transform duration-500 ease-out"
+                  style={{ transform: `translateX(-${current * 100}%)` }}
+                >
+                  {REVIEWS.map((review) => (
+                    <div key={review.name} className="w-full flex-shrink-0 px-4">
+                      <div className="bg-white rounded-sm p-10 md:p-14 border border-gray-100 relative">
+                        <div className="absolute top-8 right-10 text-fp-red/10">
+                          <Icon name="Quote" size={64} />
+                        </div>
+                        <div className="flex gap-1 mb-6">
+                          {Array.from({ length: review.stars }).map((_, j) => (
+                            <Icon key={j} name="Star" size={18} className="text-fp-red" style={{ fill: "#E0292D" }} />
+                          ))}
+                        </div>
+                        <p className="text-gray-600 text-lg leading-relaxed mb-8 relative z-10">{review.text}</p>
+                        <div className="flex items-center gap-4">
+                          <div className="w-12 h-12 rounded-full bg-fp-red flex items-center justify-center">
+                            <span className="text-white font-oswald font-bold text-lg">
+                              {review.name.charAt(0)}
+                            </span>
+                          </div>
+                          <div>
+                            <div className="font-oswald font-semibold text-fp-black text-base">{review.name}</div>
+                            <div className="text-gray-400 text-sm">{review.role}</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   ))}
                 </div>
-                <p className="text-gray-600 leading-relaxed mb-6 italic">В первую очередь привлекает широкий спектр услуг, от печати наклеек до изготовление бутафории. Во-вторых качество печати, при получении заказов никогда не сомневаешься в высоком уровне изготовления , в кадре всегда печать смотрится красиво. В-третьих, лояльная команда типографии, всегда идут на встречу по срокам и помогают реализовать творческие идеи.</p>
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-fp-red/10 flex items-center justify-center">
-                    <Icon name="User" size={18} className="text-fp-red" />
-                  </div>
-                  <div>
-                    <div className="font-golos font-semibold text-fp-black text-sm">{review.name}</div>
-                    <div className="text-gray-400 text-xs">{review.role}</div>
-                  </div>
-                </div>
               </div>
-            ))}
+
+              <div className="flex items-center justify-center gap-6 mt-10">
+                <button
+                  onClick={() => handleArrowClick("prev")}
+                  className="w-12 h-12 rounded-full border-2 border-gray-200 flex items-center justify-center hover:border-fp-red hover:text-fp-red transition-colors"
+                  aria-label="Предыдущий отзыв"
+                >
+                  <Icon name="ChevronLeft" size={20} />
+                </button>
+
+                <div className="flex gap-2">
+                  {REVIEWS.map((_, i) => (
+                    <button
+                      key={i}
+                      onClick={() => handleDotClick(i)}
+                      className={`h-2 rounded-full transition-all duration-300 ${
+                        i === current ? "w-8 bg-fp-red" : "w-2 bg-gray-300 hover:bg-gray-400"
+                      }`}
+                      aria-label={`Отзыв ${i + 1}`}
+                    />
+                  ))}
+                </div>
+
+                <button
+                  onClick={() => handleArrowClick("next")}
+                  className="w-12 h-12 rounded-full border-2 border-gray-200 flex items-center justify-center hover:border-fp-red hover:text-fp-red transition-colors"
+                  aria-label="Следующий отзыв"
+                >
+                  <Icon name="ChevronRight" size={20} />
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
