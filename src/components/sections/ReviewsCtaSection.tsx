@@ -141,7 +141,7 @@ export default function ReviewsCtaSection({ scrollTo }: ReviewsCtaSectionProps) 
             >
               Написать нам
             </button>
-            <a href="tel:+79999999999" className="btn-outline-white text-base">
+            <a href="tel:+79653548282" className="btn-outline-white text-base">
               Позвонить
             </a>
           </div>

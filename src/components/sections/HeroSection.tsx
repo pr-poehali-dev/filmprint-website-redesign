@@ -38,7 +38,7 @@ export default function HeroSection({ menuOpen, setMenuOpen, scrolled, scrollTo 
           </nav>
 
           <div className="hidden lg:flex items-center gap-4">
-            <a href="tel:+79999999999" className="text-white/70 hover:text-white transition-colors text-sm font-golos">+7 (965) 354-82-82</a>
+            <a href="tel:+79653548282" className="text-white/70 hover:text-white transition-colors text-sm font-golos">+7 (965) 354-82-82</a>
             <button className="btn-red text-sm py-3 px-6" onClick={() => scrollTo("#contacts")}>
               <span>Получить расчёт</span>
             </button>

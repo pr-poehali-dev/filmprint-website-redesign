@@ -25,10 +25,10 @@ export default function ContactsSection({ scrollTo }: ContactsSectionProps) {
             <div className={contactsSection.inView ? "animate-slide-in-left" : "opacity-0"}>
               <div className="space-y-8 mb-12">
                 {[
-                  { icon: "Phone", label: "Телефон", value: "+7 (999) 999-99-99", href: "tel:+79999999999" },
-                  { icon: "Mail", label: "Email", value: "info@filmprint.ru", href: "mailto:info@filmprint.ru" },
-                  { icon: "MapPin", label: "Адрес", value: "Москва, ул. Примерная, д. 1", href: null },
-                  { icon: "Clock", label: "График работы", value: "Пн–Пт 9:00–20:00, Сб 10:00–18:00", href: null },
+                  { icon: "Phone", label: "Телефон", value: "+7 (965) 354-82-82", href: "tel:+79653548282" },
+                  { icon: "Mail", label: "Email", value: "zakaz@filmprint.ru", href: "mailto:zakaz@filmprint.ru" },
+                  { icon: "MapPin", label: "Адрес", value: "г. Москва, ул. Краснобогатырская, д. 2. 2 стр. 53", href: null },
+                  { icon: "Clock", label: "График работы", value: "Пн–Пт: 10:00–20:00, Сб–Вс: выходной", href: null },
                 ].map((item) => (
                   <div key={item.label} className="flex items-start gap-4">
                     <div className="w-12 h-12 rounded-sm bg-fp-red/20 border border-fp-red/30 flex items-center justify-center flex-shrink-0">
@@ -79,7 +79,7 @@ export default function ContactsSection({ scrollTo }: ContactsSectionProps) {
                     <label className="text-white/40 text-xs uppercase tracking-wider block mb-2">Телефон или Email</label>
                     <input
                       type="text"
-                      placeholder="+7 (999) 999-99-99"
+                      placeholder="+7 (___) ___-__-__"
                       className="w-full bg-white/5 border border-white/10 rounded-sm px-4 py-3 text-white placeholder:text-white/20 focus:outline-none focus:border-fp-red transition-colors font-golos"
                     />
                   </div>
