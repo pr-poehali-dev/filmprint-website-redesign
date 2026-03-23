@@ -67,17 +67,21 @@ export default function AboutSection({ scrollTo }: AboutSectionProps) {
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
-                { icon: "Clock", title: "Сроки от 1 дня", desc: "Ходовые материалы всегда в наличии — запускаем производство сразу после согласования." },
-                { icon: "ShieldCheck", title: "Гарантия качества", desc: "Контроль на каждом этапе: от допечатной подготовки до финальной проверки изделия." },
-                { icon: "Handshake", title: "Индивидуальный подход", desc: "Подбираем оптимальное решение под задачу и бюджет, помогаем с макетами." },
-                { icon: "Truck", title: "Доставка по России", desc: "Отправляем заказы транспортными компаниями в любой город страны." },
-              ].map((item) => (
-                <div key={item.title} className="bg-gray-50 rounded-xl p-6 text-center group hover:bg-fp-red/5 transition-colors">
-                  <div className="w-14 h-14 rounded-xl bg-fp-red/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-fp-red/20 transition-colors">
-                    <Icon name={item.icon} size={28} className="text-fp-red" />
+                { num: "01", icon: "Flame", title: "Уверенность в горящих сроках", desc: "Аврал для нас — штатная ситуация. Мы принимаем вызовы с критическими дедлайнами, обеспечивая высокую скорость и предсказуемый результат." },
+                { num: "02", icon: "MessageCircleHeart", title: "Никаких сложностей в общении", desc: "Сразу забираем задачу, помогаем править макеты, уточняем детали и погружаемся в проект. Вам не нужно оправдываться — мы просто делаем работу." },
+                { num: "03", icon: "Target", title: "Единая точка ответственности", desc: "Вам больше не нужно координировать армию подрядчиков. Мы выступаем единым архитектором проекта: обеспечиваем бесшовную интеграцию всех процессов." },
+                { num: "04", icon: "Eye", title: "Реально смотрим на вещи", desc: "Не ищем оправданий, а признаем ошибки. Готовы переделать, если сами допустили ошибку." },
+              ].map((item, index) => (
+                <div key={item.title} className="relative bg-white border border-gray-100 rounded-sm p-7 group hover:border-fp-red/30 hover:shadow-xl transition-all duration-500 overflow-hidden">
+                  <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-fp-red to-fp-red/20 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500" />
+                  <div className="absolute top-4 right-4 font-oswald font-black text-5xl text-gray-100 group-hover:text-fp-red/10 transition-colors duration-500 leading-none select-none">{item.num}</div>
+                  <div className="relative z-10">
+                    <div className="w-12 h-12 rounded-sm bg-fp-black flex items-center justify-center mb-5 group-hover:bg-fp-red transition-colors duration-300">
+                      <Icon name={item.icon} size={22} className="text-white" />
+                    </div>
+                    <h4 className="font-oswald font-bold text-fp-black text-base uppercase mb-3 leading-tight">{item.title}</h4>
+                    <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
                   </div>
-                  <h4 className="font-oswald font-semibold text-fp-black text-lg uppercase mb-2">{item.title}</h4>
-                  <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
                 </div>
               ))}
             </div>
