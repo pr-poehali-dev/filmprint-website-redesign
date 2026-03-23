@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Icon from "@/components/ui/icon";
 import { useInView } from "./useInView";
 import { NAV_LINKS, SERVICES } from "./data";
@@ -134,9 +135,12 @@ export default function ContactsSection({ scrollTo }: ContactsSectionProps) {
           <div className="h-px bg-white/5 mb-8" />
 
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-white/30 text-xs font-golos">
-            <div>© 2026 ФильмПринт. </div>
+            <div>© 2026 ФильмПринт</div>
             <div>ИП Якубов Айвар Дамирович, ОГРНИП 311774623600930, ИНН 771475423846</div>
-            <div>г. Москва, ул. Краснобогатырская, д. 2. 2 стр. 53</div>
+            <div className="flex gap-4">
+              <Link to="/oferta" className="hover:text-white transition-colors">Договор оферты</Link>
+              <Link to="/privacy" className="hover:text-white transition-colors">Политика конфиденциальности</Link>
+            </div>
           </div>
         </div>
       </footer>
