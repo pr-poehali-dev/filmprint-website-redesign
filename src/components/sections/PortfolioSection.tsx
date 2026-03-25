@@ -17,17 +17,19 @@ export default function PortfolioSection() {
           {PORTFOLIO_ITEMS.map((item, i) => (
             <div
               key={item.title}
-              className={`relative group rounded-sm overflow-hidden cursor-pointer ${portfolioSection.inView ? `animate-fade-up animate-delay-${(i + 1) * 100}` : "opacity-0"}`}
+              className={`relative group rounded-sm overflow-hidden cursor-pointer ${
+                i === 0 ? "sm:col-span-2 sm:row-span-2" : ""
+              } ${portfolioSection.inView ? `animate-fade-up animate-delay-${(i + 1) * 100}` : "opacity-0"}`}
             >
-              <div className={`h-64 bg-gradient-to-br ${item.color} flex items-center justify-center relative overflow-hidden`}>
-                <div className="absolute inset-0 opacity-10"
-                  style={{ backgroundImage: "repeating-linear-gradient(45deg, #E0292D 0px, #E0292D 1px, transparent 1px, transparent 20px)" }} />
-                <div className="text-center z-10">
-                  <Icon name="Image" size={48} className="text-white/20 mx-auto mb-3" />
-                  <div className="font-oswald font-semibold text-white/60 text-sm uppercase tracking-wider">{item.category}</div>
-                </div>
-                <div className="absolute inset-0 bg-fp-red/90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="text-center">
+              <div className={`${i === 0 ? "h-[420px] sm:h-full" : "h-64"} relative overflow-hidden`}>
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-black/30 group-hover:bg-fp-red/80 transition-all duration-300" />
+                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="text-center px-4">
                     <h3 className="font-oswald font-bold text-white text-xl uppercase mb-2">{item.title}</h3>
                     <div className="text-white/70 text-sm">{item.category}</div>
                     <div className="mt-4 w-10 h-10 rounded-full border-2 border-white flex items-center justify-center mx-auto">

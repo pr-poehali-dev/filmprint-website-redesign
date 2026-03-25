@@ -77,12 +77,31 @@ export const PRICING = [
 ];
 
 export const PORTFOLIO_ITEMS = [
-  { title: "Кинодекорации", category: "Кино", color: "from-red-900 to-stone-900" },
-  { title: "Интерьерное оформление", category: "Интерьер", color: "from-stone-800 to-red-950" },
-  { title: "Выставочный стенд", category: "Выставки", color: "from-red-950 to-stone-900" },
-  { title: "Брендирование офиса", category: "Корпоратив", color: "from-stone-900 to-red-900" },
-  { title: "Праздничный баннер", category: "Мероприятия", color: "from-red-900 to-stone-800" },
-  { title: "Фотозона для съёмки", category: "Кино", color: "from-stone-800 to-red-900" },
+  {
+    title: "Архитектурный макет",
+    category: "3D-печать / Макеты",
+    image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/b13ebec3-175e-4370-80ba-c0abc43b5ac8.png",
+  },
+  {
+    title: "Рекламная стела",
+    category: "Бутафория",
+    image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/005783f0-0d94-4820-9bc6-c65f044908f7.png",
+  },
+  {
+    title: 'Декор для фильма «Удар»',
+    category: "Кино",
+    image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/bdb96a92-0dca-44b1-8c57-658f4fb58ec1.JPG",
+  },
+  {
+    title: '«Наука для всех»',
+    category: "ТВ-шоу / Декорации",
+    image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/d1b82151-7c6e-4191-8492-bb305016f102.jpeg",
+  },
+  {
+    title: '«Корейский Вайб»',
+    category: "Логотипы / Бутафория",
+    image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/139f4b0f-4dda-4429-9061-19b937e60a1e.png",
+  },
 ];
 
 /**
