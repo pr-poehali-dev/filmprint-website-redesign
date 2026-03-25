@@ -102,6 +102,56 @@ export const PORTFOLIO_ITEMS = [
     category: "Логотипы / Бутафория",
     image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/139f4b0f-4dda-4429-9061-19b937e60a1e.png",
   },
+  {
+    title: "Барная стойка La Petite Perle",
+    category: "Мероприятия / Декор",
+    image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/4e57db5f-dc25-4739-9288-b6ec14f54739.png",
+  },
+  {
+    title: "Стойка RUTUBE «Наука для всех»",
+    category: "ТВ-шоу / Декорации",
+    image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/953c9b99-1105-482b-b48d-1ad6d749ae19.png",
+  },
+  {
+    title: "Тележка VK Видео x Аэрофлот",
+    category: "Брендирование",
+    image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/0333a842-387b-4011-b062-71f0ef50661a.png",
+  },
+  {
+    title: "Фотозона Divage",
+    category: "Мероприятия / Декор",
+    image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/76c6f741-0904-4cb1-890f-30c68b8ea023.png",
+  },
+  {
+    title: "Упаковка «Медовые черри»",
+    category: "Упаковка / Печать",
+    image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/20d1ce59-c17b-4e46-a3ca-a7ea71375d68.jpg",
+  },
+  {
+    title: "Телефонная будка",
+    category: "Бутафория",
+    image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/7f4968c4-31da-41ac-a98e-9a8bd1c7cd39.jpg",
+  },
+  {
+    title: "Фигура «Ведьмак»",
+    category: "3D-печать / Скульптура",
+    image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/15a24b82-8e52-49d2-bef0-771911a23139.jpg",
+  },
+  {
+    title: "Световая вывеска «Делает разницу»",
+    category: "Вывески / Реклама",
+    image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/73faaebf-d09b-4426-90e0-08b4e6906463.png",
+  },
+  {
+    title: "Наградные статуэтки",
+    category: "Бутафория / Скульптура",
+    image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/d68cfc19-e88d-450f-ae83-581ade273598.png",
+  },
+  {
+    title: "Фасадный баннер на строительных лесах",
+    category: "Широкоформатная печать",
+    image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/d6ac1093-4abf-4d41-9fe9-75b2969cd457.JPG",
+  },
 ];
 
 /**

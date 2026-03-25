@@ -27,16 +27,7 @@ export default function PortfolioSection() {
                   alt={item.title}
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-black/30 group-hover:bg-fp-red/80 transition-all duration-300" />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="text-center px-4">
-                    <h3 className="font-oswald font-bold text-white text-xl uppercase mb-2">{item.title}</h3>
-                    <div className="text-white/70 text-sm">{item.category}</div>
-                    <div className="mt-4 w-10 h-10 rounded-full border-2 border-white flex items-center justify-center mx-auto">
-                      <Icon name="Plus" size={20} className="text-white" />
-                    </div>
-                  </div>
-                </div>
+                <div className="absolute inset-0 bg-black/30 transition-all duration-300" />
               </div>
               <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
                 <div className="text-fp-red text-xs font-oswald uppercase tracking-wider">{item.category}</div>
