@@ -17,28 +17,33 @@ export default function PortfolioSection() {
           style={{
             columnCount: 3,
             columnGap: 0,
+            columnFill: "balance",
           }}
         >
           {PORTFOLIO_ITEMS.map((item) => (
             <div
               key={item.title}
+              className="overflow-hidden"
               style={{
                 breakInside: "avoid",
                 margin: 0,
                 padding: 0,
                 lineHeight: 0,
+                verticalAlign: "bottom",
               }}
             >
               <img
                 src={item.image}
                 alt={item.title}
                 loading="lazy"
+                className="transition-transform duration-500 hover:scale-110"
                 style={{
                   display: "block",
                   width: "100%",
                   height: "auto",
                   margin: 0,
                   padding: 0,
+                  verticalAlign: "bottom",
                 }}
               />
             </div>
