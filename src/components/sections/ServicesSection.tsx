@@ -31,7 +31,10 @@ export default function ServicesSection({ activeService, setActiveService, scrol
               <div
                 key={service.title}
                 className={`relative group rounded-2xl overflow-hidden p-8 card-hover cursor-pointer min-h-[280px] flex flex-col justify-end ${servicesSection.inView ? `animate-fade-up animate-delay-${(i + 1) * 100}` : "opacity-0"} ${activeService === i ? "ring-2 ring-fp-red shadow-lg shadow-fp-red/10" : ""}`}
-                onClick={() => setActiveService(activeService === i ? null : i)}
+                onClick={() => {
+                  setActiveService(i);
+                  scrollTo("#contacts");
+                }}
               >
                 <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${service.image})` }} />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-black/30 group-hover:from-black/95 group-hover:via-black/70 group-hover:to-black/40 transition-all duration-300" />

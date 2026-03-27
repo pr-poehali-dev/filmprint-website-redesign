@@ -39,7 +39,7 @@ export default function Index() {
       <AboutSection scrollTo={scrollTo} />
       <PortfolioSection />
       <ReviewsCtaSection scrollTo={scrollTo} />
-      <ContactsSection scrollTo={scrollTo} />
+      <ContactsSection scrollTo={scrollTo} activeService={activeService} />
     </div>
   );
 }

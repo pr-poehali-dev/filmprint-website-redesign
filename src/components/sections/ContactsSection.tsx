@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Icon from "@/components/ui/icon";
 import { useInView } from "./useInView";
@@ -8,11 +8,19 @@ const SEND_CONTACT_URL = "https://functions.poehali.dev/77139f1c-eecb-4bb1-b009-
 
 interface ContactsSectionProps {
   scrollTo: (href: string) => void;
+  activeService?: number | null;
 }
 
-export default function ContactsSection({ scrollTo }: ContactsSectionProps) {
+export default function ContactsSection({ scrollTo, activeService }: ContactsSectionProps) {
   const contactsSection = useInView(0.1);
   const [formData, setFormData] = useState({ name: "", contact: "", service: "", message: "" });
+
+  useEffect(() => {
+    if (activeService !== null && activeService !== undefined && SERVICES[activeService]) {
+      setFormData((prev) => ({ ...prev, service: SERVICES[activeService].title }));
+      setSent(false);
+    }
+  }, [activeService]);
   const [sending, setSending] = useState(false);
   const [sent, setSent] = useState(false);
   const [error, setError] = useState("");
