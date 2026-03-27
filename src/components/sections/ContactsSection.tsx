@@ -174,6 +174,28 @@ export default function ContactsSection({ scrollTo }: ContactsSectionProps) {
                   </div>
                 )}
               </div>
+
+              <div className="mt-6 bg-white/5 border border-white/10 rounded-sm p-6">
+                <h4 className="font-oswald font-semibold text-white text-sm uppercase tracking-wider mb-4">Реквизиты</h4>
+                <div className="space-y-3 text-sm font-golos">
+                  <div>
+                    <span className="text-white/40">Наименование организации:</span>
+                    <p className="text-white/70">ИП Якубов Айвар Дамирович</p>
+                  </div>
+                  <div>
+                    <span className="text-white/40">ИНН:</span>
+                    <p className="text-white/70">771475423846</p>
+                  </div>
+                  <div>
+                    <span className="text-white/40">ОГРН ИП:</span>
+                    <p className="text-white/70">311774623600930, выдан 24 августа 2011</p>
+                  </div>
+                  <div>
+                    <span className="text-white/40">Юридический адрес:</span>
+                    <p className="text-white/70">143968, Россия, Московская область, город Реутов, улица Реутовских ополченцев, дом 14, кв 311</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
