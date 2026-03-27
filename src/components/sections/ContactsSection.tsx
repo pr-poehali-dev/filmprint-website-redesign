@@ -97,18 +97,13 @@ export default function ContactsSection({ scrollTo }: ContactsSectionProps) {
                 href="https://t.me/filmprintmsk"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-6 block"
+                className="mt-4 inline-block"
               >
-                <div className="relative w-56 h-56 mx-auto rounded-lg overflow-hidden border border-white/10 hover:border-fp-red/50 transition-colors">
-                  <img
-                    src="https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/70dc488e-2898-4efb-a5ba-e58be45219e8.png"
-                    alt="QR-код Telegram @filmprintmsk"
-                    className="w-full h-full object-cover"
-                    style={{
-                      filter: "sepia(1) saturate(3) hue-rotate(-20deg) brightness(0.85)",
-                    }}
-                  />
-                </div>
+                <img
+                  src="https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/137b650c-11e2-4c5d-be9c-3792cea80ee2.png"
+                  alt="QR-код Telegram @filmprintmsk"
+                  className="w-44 h-44 object-contain"
+                />
               </a>
             </div>
 
