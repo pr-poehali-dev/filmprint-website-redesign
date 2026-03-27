@@ -87,7 +87,7 @@ export default function ContactsSection({ scrollTo }: ContactsSectionProps) {
                   <Icon name="Send" size={22} className="text-fp-red" />
                 </div>
                 <div>
-                  <div className="text-white font-oswald font-semibold uppercase tracking-wider rounded-0 py-0">Telegram</div>
+                  <div className="text-white font-oswald font-semibold uppercase tracking-wider py-0 rounded-none">Telegram</div>
                   <div className="text-white/40 text-sm">Скорость ответа - до 3 мин</div>
                 </div>
                 <Icon name="ArrowRight" size={18} className="text-white/30 group-hover:text-fp-red transition-colors ml-auto" />
@@ -102,14 +102,14 @@ export default function ContactsSection({ scrollTo }: ContactsSectionProps) {
                 <img
                   src="https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/137b650c-11e2-4c5d-be9c-3792cea80ee2.png"
                   alt="QR-код Telegram @filmprintmsk"
-                  className="w-44 h-44 object-contain"
+                  className="w-44 h-44 py-0 my-[100px] object-cover rounded-0 mx-0"
                 />
               </a>
             </div>
 
             <div className={contactsSection.inView ? "animate-fade-up animate-delay-300" : "opacity-0"}>
               <div className="bg-white/5 border border-white/10 rounded-sm p-8">
-                <h3 className="font-oswald font-semibold text-white text-xl uppercase mb-6">Оставьте заявку</h3>
+                <h3 className="font-oswald font-semibold text-white uppercase mb-6 text-xl">Оставьте заявку</h3>
 
                 {sent ? (
                   <div className="text-center py-8">
@@ -176,23 +176,23 @@ export default function ContactsSection({ scrollTo }: ContactsSectionProps) {
               </div>
 
               <div className="mt-6 bg-white/5 border border-white/10 rounded-sm p-6">
-                <h4 className="font-oswald font-semibold text-white text-sm uppercase tracking-wider mb-4">Реквизиты</h4>
+                <h4 className="font-oswald font-semibold text-white uppercase tracking-wider mb-4 text-2xl">Реквизиты</h4>
                 <div className="space-y-3 text-sm font-golos">
                   <div>
-                    <span className="text-white/40">Наименование организации:</span>
-                    <p className="text-white/70">ИП Якубов Айвар Дамирович</p>
+                    <span className="text-slate-400 text-base">Наименование организации:</span>
+                    <p className="text-lg text-slate-200">ИП Якубов Айвар Дамирович</p>
                   </div>
                   <div>
-                    <span className="text-white/40">ИНН:</span>
-                    <p className="text-white/70">771475423846</p>
+                    <span className="text-base text-slate-400">ИНН:</span>
+                    <p className="text-lg text-slate-200">771475423846</p>
                   </div>
                   <div>
-                    <span className="text-white/40">ОГРН ИП:</span>
-                    <p className="text-white/70">311774623600930, выдан 24 августа 2011</p>
+                    <span className="text-slate-400 text-base">ОГРН ИП:</span>
+                    <p className="text-lg text-slate-200">311774623600930, выдан 24 августа 2011</p>
                   </div>
                   <div>
-                    <span className="text-white/40">Юридический адрес:</span>
-                    <p className="text-white/70">143968, Россия, Московская область, город Реутов, улица Реутовских ополченцев, дом 14, кв 311</p>
+                    <span className="text-slate-400 text-base">Юридический адрес:</span>
+                    <p className="text-slate-200 text-lg">143968, Россия, Московская область, город Реутов, улица Реутовских ополченцев, дом 14, кв 311</p>
                   </div>
                 </div>
               </div>
