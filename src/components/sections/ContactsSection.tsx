@@ -78,19 +78,37 @@ export default function ContactsSection({ scrollTo }: ContactsSectionProps) {
               </div>
 
               <a
-                href="https://t.me/"
+                href="https://t.me/filmprintmsk"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 p-5 bg-white/5 border border-white/10 rounded-sm hover:border-fp-red/50 transition-colors group"
               >
-                <div className="w-12 h-12 rounded-sm bg-blue-500/20 border border-blue-400/30 flex items-center justify-center">
-                  <Icon name="Send" size={22} className="text-blue-400" />
+                <div className="w-12 h-12 rounded-sm bg-fp-red/20 border border-fp-red/30 flex items-center justify-center">
+                  <Icon name="Send" size={22} className="text-fp-red" />
                 </div>
                 <div>
                   <div className="text-white font-oswald font-semibold uppercase tracking-wider rounded-0 py-0">Telegram</div>
                   <div className="text-white/40 text-sm">Скорость ответа - до 3 мин</div>
                 </div>
                 <Icon name="ArrowRight" size={18} className="text-white/30 group-hover:text-fp-red transition-colors ml-auto" />
+              </a>
+
+              <a
+                href="https://t.me/filmprintmsk"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-6 block"
+              >
+                <div className="relative w-56 h-56 mx-auto rounded-lg overflow-hidden border border-white/10 hover:border-fp-red/50 transition-colors">
+                  <img
+                    src="https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/70dc488e-2898-4efb-a5ba-e58be45219e8.png"
+                    alt="QR-код Telegram @filmprintmsk"
+                    className="w-full h-full object-cover"
+                    style={{
+                      filter: "sepia(1) saturate(3) hue-rotate(-20deg) brightness(0.85)",
+                    }}
+                  />
+                </div>
               </a>
             </div>
 
