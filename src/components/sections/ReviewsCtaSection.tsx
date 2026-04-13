@@ -135,12 +135,14 @@ export default function ReviewsCtaSection({ scrollTo }: ReviewsCtaSectionProps) 
             Расскажите задачу — подберём материал, рассчитаем стоимость и сроки
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <button
-              className="bg-white text-fp-red font-oswald font-semibold uppercase tracking-wider px-10 py-4 rounded-sm hover:bg-fp-black hover:text-white transition-all duration-300 text-base"
-              onClick={() => scrollTo("#contacts")}
+            <a
+              href="https://t.me/filmprintmsk"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white text-fp-red font-oswald font-semibold uppercase tracking-wider px-10 py-4 rounded-sm hover:bg-fp-black hover:text-white transition-all duration-300 text-base inline-block"
             >
               Написать нам
-            </button>
+            </a>
             <a href="tel:+79653548282" className="btn-outline-white text-base">
               Позвонить
             </a>
