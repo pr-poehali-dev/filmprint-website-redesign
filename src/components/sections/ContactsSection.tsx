@@ -247,9 +247,9 @@ export default function ContactsSection({ scrollTo, activeService }: ContactsSec
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 mb-8">
             <div className="flex items-center">
               <img
-                src="https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/logo-transparent.png"
+                src="https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/6e977fbf-9a2b-4cb8-8202-be24f73f8357.png"
                 alt="ФильмПринт"
-                className="h-10 w-auto object-contain"
+                className="h-14 w-auto object-contain"
               />
             </div>
 
