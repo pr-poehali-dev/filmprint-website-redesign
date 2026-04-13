@@ -87,7 +87,7 @@ export default function HeroSection({ menuOpen, setMenuOpen, scrolled, scrollTo 
             </div>
 
             <h1 className={`font-oswald font-black text-[1.75rem] sm:text-4xl md:text-6xl lg:text-8xl uppercase leading-none mb-6 whitespace-nowrap ${heroSection.inView ? "animate-fade-up animate-delay-100" : "opacity-0"}`}>
-              <span style={{ background: "linear-gradient(to right, #ffffff, rgba(255,255,255,0.35))", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>ФильмПринт</span><br />
+              <span style={{ background: "linear-gradient(to right, #ffffff, rgba(255,255,255,0.35))", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>филмпринт</span><br />
               <span style={{ background: "linear-gradient(to right, #E0292D, rgba(224,41,45,0.35))", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>Ваше единое окно</span><br />
               <span style={{ background: "linear-gradient(to right, #ffffff, rgba(255,255,255,0.35))", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>в мире производства</span>
             </h1>
