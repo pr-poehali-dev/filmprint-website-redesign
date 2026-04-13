@@ -118,16 +118,16 @@ export default function ReviewsCtaSection({ scrollTo }: ReviewsCtaSectionProps) 
 
       {/* CTA BANNER */}
       <section className="py-24 bg-gradient-red relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10"
+        <div className="absolute inset-0 opacity-10 pointer-events-none"
           style={{ backgroundImage: "repeating-linear-gradient(45deg, #fff 0px, #fff 1px, transparent 1px, transparent 30px)" }} />
-        <div className="absolute right-0 top-0 bottom-0 w-32 hidden lg:flex flex-col opacity-20">
+        <div className="absolute right-0 top-0 bottom-0 w-32 hidden lg:flex flex-col opacity-20 pointer-events-none">
           {Array.from({ length: 16 }).map((_, i) => (
             <div key={i} className="flex-1 border-b border-white/30 flex items-center justify-center">
               <div className="w-4 h-8 rounded-sm bg-white/30" />
             </div>
           ))}
         </div>
-        <div className="max-w-4xl mx-auto px-6 text-center">
+        <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
           <h2 className="font-oswald font-bold text-5xl md:text-6xl text-white uppercase mb-6">
             Готовы обсудить<br />ваш проект?
           </h2>
