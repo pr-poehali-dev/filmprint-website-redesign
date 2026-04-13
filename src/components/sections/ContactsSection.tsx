@@ -101,6 +101,22 @@ export default function ContactsSection({ scrollTo, activeService }: ContactsSec
                 <Icon name="ArrowRight" size={18} className="text-white/30 group-hover:text-fp-red transition-colors ml-auto" />
               </a>
 
+              <a
+                href="https://max.ru/u/f9LHodD0cOIqR4UHX6g0mLViT9FXCWvY2ikW9bisoPrWGPrtufnuuVxhjVg"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-4 p-5 bg-white/5 border border-white/10 rounded-sm hover:border-fp-red/50 transition-colors group mt-3"
+              >
+                <div className="w-12 h-12 rounded-sm bg-fp-red/20 border border-fp-red/30 flex items-center justify-center">
+                  <Icon name="MessageCircle" size={22} className="text-fp-red" />
+                </div>
+                <div>
+                  <div className="text-white font-oswald font-semibold uppercase tracking-wider py-0 rounded-none">MAX</div>
+                  <div className="text-white/40 text-sm">Мессенджер MAX</div>
+                </div>
+                <Icon name="ArrowRight" size={18} className="text-white/30 group-hover:text-fp-red transition-colors ml-auto" />
+              </a>
+
               <div className="flex items-start gap-6 mt-4">
                 <a
                   href="https://t.me/filmprintmsk"
