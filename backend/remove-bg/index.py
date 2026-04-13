@@ -8,17 +8,24 @@ import uuid
 
 
 def remove_background(img: Image.Image) -> Image.Image:
-    """Удаляет белый и светло-серый (шахматный) фон, оставляя тёмные пиксели."""
+    """Удаляет любой светлый/серый фон (включая шахматный), оставляя цветные тёмные пиксели."""
     img = img.convert("RGBA")
     data = img.getdata()
 
     new_data = []
     for r, g, b, a in data:
-        brightness = (r + g + b) / 3
-        if brightness > 200 and a > 0:
+        if a == 0:
             new_data.append((r, g, b, 0))
-        elif brightness > 160 and a > 0:
-            alpha = int(255 * (1 - (brightness - 160) / 60))
+            continue
+        brightness = (r + g + b) / 3
+        max_c = max(r, g, b)
+        min_c = min(r, g, b)
+        saturation = (max_c - min_c) / max_c if max_c > 0 else 0
+        is_gray = saturation < 0.15
+        if is_gray and brightness > 140:
+            new_data.append((r, g, b, 0))
+        elif is_gray and brightness > 100:
+            alpha = int(255 * (1 - (brightness - 100) / 40))
             new_data.append((r, g, b, min(a, alpha)))
         else:
             new_data.append((r, g, b, a))
