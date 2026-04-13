@@ -101,18 +101,29 @@ export default function ContactsSection({ scrollTo, activeService }: ContactsSec
                 <Icon name="ArrowRight" size={18} className="text-white/30 group-hover:text-fp-red transition-colors ml-auto" />
               </a>
 
-              <a
-                href="https://t.me/filmprintmsk"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-4 inline-block"
-              >
-                <img
-                  src="https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/137b650c-11e2-4c5d-be9c-3792cea80ee2.png"
-                  alt="QR-код Telegram @filmprintmsk"
-                  className="w-44 h-44 py-0 my-[100px] object-cover rounded-0 mx-0"
-                />
-              </a>
+              <div className="flex items-start gap-6 mt-4">
+                <a
+                  href="https://t.me/filmprintmsk"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block"
+                >
+                  <div className="text-white/40 text-xs uppercase tracking-wider mb-2 font-golos">Telegram</div>
+                  <img
+                    src="https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/137b650c-11e2-4c5d-be9c-3792cea80ee2.png"
+                    alt="QR-код Telegram @filmprintmsk"
+                    className="w-40 h-40 object-contain rounded-sm"
+                  />
+                </a>
+                <div className="inline-block">
+                  <div className="text-white/40 text-xs uppercase tracking-wider mb-2 font-golos">WhatsApp</div>
+                  <img
+                    src="https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/qr-whatsapp.png"
+                    alt="QR-код WhatsApp"
+                    className="w-40 h-40 object-contain rounded-sm"
+                  />
+                </div>
+              </div>
             </div>
 
             <div className={contactsSection.inView ? "animate-fade-up animate-delay-300" : "opacity-0"}>

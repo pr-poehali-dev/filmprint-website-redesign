@@ -4,20 +4,22 @@ import io
 import urllib.request
 import boto3
 from PIL import Image
+import uuid
 
 
-def remove_white_background(img: Image.Image, threshold: int = 240, fuzz: int = 30) -> Image.Image:
-    """Удаляет белый фон с изображения, делая его прозрачным."""
+def remove_background(img: Image.Image) -> Image.Image:
+    """Удаляет белый и светло-серый (шахматный) фон, оставляя тёмные пиксели."""
     img = img.convert("RGBA")
     data = img.getdata()
 
     new_data = []
     for r, g, b, a in data:
-        if r >= threshold and g >= threshold and b >= threshold:
+        brightness = (r + g + b) / 3
+        if brightness > 200 and a > 0:
             new_data.append((r, g, b, 0))
-        elif r >= threshold - fuzz and g >= threshold - fuzz and b >= threshold - fuzz:
-            alpha = int(255 * (1 - min(r, g, b) / 255))
-            new_data.append((r, g, b, alpha))
+        elif brightness > 160 and a > 0:
+            alpha = int(255 * (1 - (brightness - 160) / 60))
+            new_data.append((r, g, b, min(a, alpha)))
         else:
             new_data.append((r, g, b, a))
 
@@ -26,7 +28,7 @@ def remove_white_background(img: Image.Image, threshold: int = 240, fuzz: int = 
 
 
 def handler(event: dict, context) -> dict:
-    """Убирает белый фон с логотипа и сохраняет PNG в S3."""
+    """Убирает фон с изображения и сохраняет PNG в S3."""
     cors_headers = {
         "Access-Control-Allow-Origin": "*",
         "Access-Control-Allow-Methods": "POST, OPTIONS",
@@ -38,12 +40,17 @@ def handler(event: dict, context) -> dict:
 
     body = json.loads(event.get("body") or "{}")
     image_url = body.get("url", "")
+    filename = body.get("filename", f"nobg-{uuid.uuid4().hex[:8]}.png")
 
     with urllib.request.urlopen(image_url) as resp:
         img_bytes = resp.read()
 
     img = Image.open(io.BytesIO(img_bytes))
-    result = remove_white_background(img)
+    result = remove_background(img)
+
+    bbox = result.getbbox()
+    if bbox:
+        result = result.crop(bbox)
 
     out = io.BytesIO()
     result.save(out, format="PNG")
@@ -55,7 +62,7 @@ def handler(event: dict, context) -> dict:
         aws_access_key_id=os.environ["AWS_ACCESS_KEY_ID"],
         aws_secret_access_key=os.environ["AWS_SECRET_ACCESS_KEY"],
     )
-    key = "logo-transparent.png"
+    key = filename
     s3.put_object(Bucket="files", Key=key, Body=out.read(), ContentType="image/png")
 
     cdn_url = f"https://cdn.poehali.dev/projects/{os.environ['AWS_ACCESS_KEY_ID']}/bucket/{key}"
