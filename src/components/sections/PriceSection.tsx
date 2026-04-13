@@ -62,10 +62,9 @@ export default function PriceSection({ scrollTo }: PriceSectionProps) {
         <div className={`mt-12 flex flex-col sm:flex-row items-center gap-6 justify-center ${section.inView ? "animate-fade-up animate-delay-400" : "opacity-0"}`}>
           <button
             onClick={() => scrollTo("#contacts")}
-            className="btn-red px-8 py-4 text-base"
+            className="btn-red px-8 py-4 text-base flex items-center justify-center"
           >
-            <Icon name="Calculator" size={18} />
-            <span>Рассчитать заказ</span>
+            Рассчитать заказ
           </button>
           <div className="flex items-center gap-2 text-fp-black/40 font-golos text-sm">
             <Icon name="Info" size={16} />
