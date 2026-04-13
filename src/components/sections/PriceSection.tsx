@@ -66,10 +66,7 @@ export default function PriceSection({ scrollTo }: PriceSectionProps) {
           >
             Рассчитать заказ
           </button>
-          <div className="flex items-center gap-2 text-fp-black/40 font-golos text-sm">
-            <Icon name="Info" size={16} />
-            <span>Скидки при заказе от 10 м²</span>
-          </div>
+
         </div>
       </div>
     </section>
