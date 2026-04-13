@@ -22,10 +22,7 @@ export default function HeroSection({ menuOpen, setMenuOpen, scrolled, scrollTo 
             <img
               src="https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/312b2ffd-6011-41f6-883f-77a9306e7696.png"
               alt="ФильмПринт"
-              className="h-12 w-auto object-contain"
-              style={{
-                filter: "drop-shadow(0 0 1px rgba(255,255,255,0.8)) drop-shadow(0 0 1.5px rgba(255,255,255,0.5)) drop-shadow(0 2px 8px rgba(0,0,0,0.5))"
-              }}
+              className="h-[72px] w-auto object-contain"
             />
           </div>
 
