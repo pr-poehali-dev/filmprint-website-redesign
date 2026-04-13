@@ -60,7 +60,7 @@ export default function PriceSection({ scrollTo }: PriceSectionProps) {
         </div>
 
         <div className={`mt-12 flex flex-col sm:flex-row items-center gap-6 justify-center ${section.inView ? "animate-fade-up animate-delay-400" : "opacity-0"}`}>
-          <button
+          <button className="btn-red py-[11px] my-0 mx-0 px-[77px] text-base rounded-[4px] bg-transparent"
             onClick={() => scrollTo("#contacts")}
             className="btn-red px-8 py-4 text-base flex items-center justify-center"
           >

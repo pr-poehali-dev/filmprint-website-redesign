@@ -112,7 +112,7 @@ export default function ContactsSection({ scrollTo, activeService }: ContactsSec
                 </div>
                 <div>
                   <div className="text-white font-oswald font-semibold uppercase tracking-wider py-0 rounded-none">MAX</div>
-                  <div className="text-white/40 text-sm">Мессенджер MAX</div>
+                  <div className="text-white/40 text-sm">Скорость ответа - до 3 мин</div>
                 </div>
                 <Icon name="ArrowRight" size={18} className="text-white/30 group-hover:text-fp-red transition-colors ml-auto" />
               </a>
@@ -124,7 +124,7 @@ export default function ContactsSection({ scrollTo, activeService }: ContactsSec
                   rel="noopener noreferrer"
                   className="inline-block"
                 >
-                  <div className="text-white/40 text-xs uppercase tracking-wider mb-2 font-golos">Telegram</div>
+                  <div className="text-white/40 text-xs uppercase tracking-wider mb-2 font-golos"></div>
                   <img
                     src="https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/137b650c-11e2-4c5d-be9c-3792cea80ee2.png"
                     alt="QR-код Telegram @filmprintmsk"
@@ -132,7 +132,7 @@ export default function ContactsSection({ scrollTo, activeService }: ContactsSec
                   />
                 </a>
                 <div className="inline-block">
-                  <div className="text-white/40 text-xs uppercase tracking-wider mb-2 font-golos">WhatsApp</div>
+                  <div className="text-white/40 text-xs uppercase tracking-wider mb-2 font-golos"></div>
                   <img
                     src="https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/qr-whatsapp.png"
                     alt="QR-код WhatsApp"
