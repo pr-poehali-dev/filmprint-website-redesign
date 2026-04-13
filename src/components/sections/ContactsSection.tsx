@@ -124,21 +124,30 @@ export default function ContactsSection({ scrollTo, activeService }: ContactsSec
                   rel="noopener noreferrer"
                   className="inline-block"
                 >
-                  <div className="text-white/40 text-xs uppercase tracking-wider mb-2 font-golos"></div>
-                  <img
-                    src="https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/137b650c-11e2-4c5d-be9c-3792cea80ee2.png"
-                    alt="QR-код Telegram @filmprintmsk"
-                    className="w-40 h-40 object-contain rounded-sm"
-                  />
+                  <div className="text-white/40 text-xs uppercase tracking-wider mb-2 font-golos">Telegram</div>
+                  <div className="w-36 h-36 bg-white rounded-sm p-2">
+                    <img
+                      src="https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/137b650c-11e2-4c5d-be9c-3792cea80ee2.png"
+                      alt="QR-код Telegram @filmprintmsk"
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
                 </a>
-                <div className="inline-block">
-                  <div className="text-white/40 text-xs uppercase tracking-wider mb-2 font-golos"></div>
-                  <img
-                    src="https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/qr-whatsapp.png"
-                    alt="QR-код WhatsApp"
-                    className="w-40 h-40 object-contain rounded-sm"
-                  />
-                </div>
+                <a
+                  href="https://max.ru/u/f9LHodD0cOIqR4UHX6g0mLViT9FXCWvY2ikW9bisoPrWGPrtufnuuVxhjVg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block"
+                >
+                  <div className="text-white/40 text-xs uppercase tracking-wider mb-2 font-golos">MAX</div>
+                  <div className="w-36 h-36 bg-white rounded-sm p-2">
+                    <img
+                      src="https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/4d3cbde7-cd8f-48f5-9806-6a1c47324962.png"
+                      alt="QR-код MAX"
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                </a>
               </div>
             </div>
 
