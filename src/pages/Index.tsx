@@ -3,6 +3,7 @@ import HeroSection from "@/components/sections/HeroSection";
 import ServicesSection from "@/components/sections/ServicesSection";
 import AboutSection from "@/components/sections/AboutSection";
 import PortfolioSection from "@/components/sections/PortfolioSection";
+import PriceSection from "@/components/sections/PriceSection";
 import ReviewsCtaSection from "@/components/sections/ReviewsCtaSection";
 import ContactsSection from "@/components/sections/ContactsSection";
 
@@ -38,6 +39,7 @@ export default function Index() {
       />
       <AboutSection scrollTo={scrollTo} />
       <PortfolioSection />
+      <PriceSection scrollTo={scrollTo} />
       <ReviewsCtaSection scrollTo={scrollTo} />
       <ContactsSection scrollTo={scrollTo} activeService={activeService} />
     </div>
