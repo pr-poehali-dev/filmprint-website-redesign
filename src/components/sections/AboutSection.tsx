@@ -16,7 +16,7 @@ export default function AboutSection({ scrollTo }: AboutSectionProps) {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className={aboutSection.inView ? "animate-slide-in-left" : "opacity-0"}>
               <div className="section-label mb-4">О компании</div>
-              <h2 className="font-oswald font-bold text-5xl md:text-6xl text-fp-black uppercase mb-8">
+              <h2 className="font-oswald font-bold text-3xl sm:text-5xl md:text-6xl text-fp-black uppercase mb-8">
                 6 лет <span className="text-gradient-red">экспертизы</span>
               </h2>
               <p className="text-gray-600 text-lg leading-relaxed mb-6">ФильмПринт — производство полного цикла. Мы не просто печатаем — мы создаём решения. За 6 лет работы мы стали для клиентов не просто подрядчиком, а надёжным партнёром, крепким тылом в производстве.</p>
@@ -45,14 +45,14 @@ export default function AboutSection({ scrollTo }: AboutSectionProps) {
 
             <div className={`relative ${aboutSection.inView ? "animate-fade-up animate-delay-300" : "opacity-0"}`}>
               <div className="relative rounded-sm overflow-hidden">
-                <img src={HERO_IMAGE} alt="Производство ФильмПринт" className="w-full h-[500px] object-cover" />
+                <img src={HERO_IMAGE} alt="Производство ФильмПринт" className="w-full h-[300px] sm:h-[400px] lg:h-[500px] object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-fp-black/60 to-transparent" />
               </div>
-              <div className="absolute -bottom-6 -left-6 bg-fp-red text-white p-6 rounded-sm shadow-xl animate-pulse-glow">
+              <div className="absolute -bottom-4 left-2 sm:-bottom-6 sm:-left-6 bg-fp-red text-white p-4 sm:p-6 rounded-sm shadow-xl animate-pulse-glow">
                 <div className="font-oswald font-bold text-4xl">6+</div>
                 <div className="text-white/80 text-sm uppercase tracking-wider">лет на рынке</div>
               </div>
-              <div className="absolute -right-4 top-0 bottom-0 w-8 flex flex-col overflow-hidden">
+              <div className="absolute -right-4 top-0 bottom-0 w-8 hidden sm:flex flex-col overflow-hidden">
                 {Array.from({ length: 12 }).map((_, i) => (
                   <div key={i} className="flex-1 border-b border-fp-red/30 flex items-center justify-center">
                     <div className="w-2 h-4 rounded-sm bg-fp-red/40" />
@@ -62,7 +62,7 @@ export default function AboutSection({ scrollTo }: AboutSectionProps) {
             </div>
           </div>
           <div className={`mt-24 ${aboutSection.inView ? "animate-fade-up animate-delay-500" : "opacity-0"}`}>
-            <h3 className="font-oswald font-bold text-3xl md:text-4xl text-fp-black uppercase mb-12 text-center">
+            <h3 className="font-oswald font-bold text-2xl sm:text-3xl md:text-4xl text-fp-black uppercase mb-12 text-center">
               Почему клиенты <span className="text-gradient-red">выбирают нас</span>
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">

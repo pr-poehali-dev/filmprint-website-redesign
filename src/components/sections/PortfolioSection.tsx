@@ -9,13 +9,12 @@ export default function PortfolioSection() {
       <div ref={portfolioSection.ref} className="max-w-5xl mx-auto px-6">
         <div className={`mb-16 ${portfolioSection.inView ? "animate-fade-up" : "opacity-0"}`}>
           <div className="section-label mb-4">Наши работы</div>
-          <h2 className="font-oswald font-bold text-5xl md:text-6xl text-white uppercase">портфолио</h2>
+          <h2 className="font-oswald font-bold text-3xl sm:text-5xl md:text-6xl text-white uppercase">портфолио</h2>
         </div>
 
         <div
-          className={`${portfolioSection.inView ? "animate-fade-up animate-delay-200" : "opacity-0"}`}
+          className={`portfolio-masonry ${portfolioSection.inView ? "animate-fade-up animate-delay-200" : "opacity-0"}`}
           style={{
-            columnCount: 3,
             columnGap: 0,
             columnFill: "balance",
           }}

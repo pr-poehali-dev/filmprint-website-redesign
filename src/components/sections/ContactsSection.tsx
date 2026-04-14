@@ -57,7 +57,7 @@ export default function ContactsSection({ scrollTo, activeService }: ContactsSec
         <div ref={contactsSection.ref} className="max-w-7xl mx-auto px-6">
           <div className={`mb-16 ${contactsSection.inView ? "animate-fade-up" : "opacity-0"}`}>
             <div className="section-label mb-4">Свяжитесь с нами</div>
-            <h2 className="font-oswald font-bold text-5xl md:text-6xl uppercase text-red-700">контакты</h2>
+            <h2 className="font-oswald font-bold text-3xl sm:text-5xl md:text-6xl uppercase text-red-700">контакты</h2>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
@@ -117,7 +117,7 @@ export default function ContactsSection({ scrollTo, activeService }: ContactsSec
                 <Icon name="ArrowRight" size={18} className="text-white/30 group-hover:text-fp-red transition-colors ml-auto" />
               </a>
 
-              <div className="flex items-start gap-6 mt-4">
+              <div className="flex flex-col sm:flex-row items-start gap-6 mt-4">
                 <a
                   href="https://t.me/filmprintmsk"
                   target="_blank"

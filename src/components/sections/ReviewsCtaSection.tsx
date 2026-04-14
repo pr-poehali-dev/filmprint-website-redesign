@@ -45,7 +45,7 @@ export default function ReviewsCtaSection({ scrollTo }: ReviewsCtaSectionProps) 
         <div ref={reviewsSection.ref} className="max-w-7xl mx-auto px-6">
           <div className={`mb-16 text-center ${reviewsSection.inView ? "animate-fade-up" : "opacity-0"}`}>
             <div className="section-label mb-4 text-center">Что говорят клиенты</div>
-            <h2 className="font-oswald font-bold text-5xl md:text-6xl text-fp-black uppercase">отзывы</h2>
+            <h2 className="font-oswald font-bold text-3xl sm:text-5xl md:text-6xl text-fp-black uppercase">отзывы</h2>
           </div>
 
           <div className={`relative ${reviewsSection.inView ? "animate-fade-up animate-delay-300" : "opacity-0"}`}>
@@ -128,10 +128,10 @@ export default function ReviewsCtaSection({ scrollTo }: ReviewsCtaSectionProps) 
           ))}
         </div>
         <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
-          <h2 className="font-oswald font-bold text-5xl md:text-6xl text-white uppercase mb-6">
+          <h2 className="font-oswald font-bold text-3xl sm:text-5xl md:text-6xl text-white uppercase mb-6">
             Готовы обсудить<br />ваш проект?
           </h2>
-          <p className="text-white/80 text-xl mb-10 font-golos">
+          <p className="text-white/80 text-base sm:text-xl mb-10 font-golos">
             Расскажите задачу — подберём материал, рассчитаем стоимость и сроки
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
@@ -139,7 +139,7 @@ export default function ReviewsCtaSection({ scrollTo }: ReviewsCtaSectionProps) 
               href="https://t.me/filmprintmsk"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-white text-fp-red font-oswald font-semibold uppercase tracking-wider px-10 py-4 rounded-sm hover:bg-fp-black hover:text-white transition-all duration-300 text-base inline-block"
+              className="bg-white text-fp-red font-oswald font-semibold uppercase tracking-wider px-6 sm:px-10 py-4 rounded-sm hover:bg-fp-black hover:text-white transition-all duration-300 text-sm sm:text-base inline-block"
             >
               Написать нам
             </a>

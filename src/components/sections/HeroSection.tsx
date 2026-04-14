@@ -22,7 +22,7 @@ export default function HeroSection({ menuOpen, setMenuOpen, scrolled, scrollTo 
             <img
               src="https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/312b2ffd-6011-41f6-883f-77a9306e7696.png"
               alt="ФильмПринт"
-              className="h-[72px] w-auto object-contain"
+              className="h-10 sm:h-14 lg:h-[72px] w-auto object-contain"
             />
           </div>
 
@@ -77,13 +77,13 @@ export default function HeroSection({ menuOpen, setMenuOpen, scrolled, scrollTo 
           ))}
         </div>
 
-        <div ref={heroSection.ref} className="relative z-10 max-w-7xl my-0 py-[175px] px-[150px] mx-0">
+        <div ref={heroSection.ref} className="relative z-10 max-w-7xl my-0 pt-28 pb-16 px-6 sm:py-32 sm:px-10 lg:py-[175px] lg:px-[150px] mx-0">
           <div className="max-w-3xl">
             <div className={`mb-6 ${heroSection.inView ? "animate-fade-up" : "opacity-0"}`}>
               <span className="text-sm font-oswald uppercase tracking-[0.3em] font-medium" style={{ fontStretch: "condensed", background: "linear-gradient(to right, #E0292D, rgba(224,41,45,0.65))", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>От наклеек до арт-объектов</span>
             </div>
 
-            <h1 className={`font-oswald font-black text-[1.75rem] sm:text-4xl md:text-6xl lg:text-8xl uppercase leading-none mb-6 whitespace-nowrap ${heroSection.inView ? "animate-fade-up animate-delay-100" : "opacity-0"}`}>
+            <h1 className={`font-oswald font-black text-3xl sm:text-4xl md:text-6xl lg:text-8xl uppercase leading-none mb-6 ${heroSection.inView ? "animate-fade-up animate-delay-100" : "opacity-0"}`}>
               <span style={{ background: "linear-gradient(to right, #ffffff, rgba(255,255,255,0.35))", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>филмпринт</span><br />
               <span style={{ background: "linear-gradient(to right, #E0292D, rgba(224,41,45,0.35))", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>Ваше единое окно</span><br />
               <span style={{ background: "linear-gradient(to right, #ffffff, rgba(255,255,255,0.35))", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>в мире производства</span>
@@ -104,7 +104,7 @@ export default function HeroSection({ menuOpen, setMenuOpen, scrolled, scrollTo 
               </button>
             </div>
 
-            <div className={`grid grid-cols-3 gap-4 ${heroSection.inView ? "animate-fade-up animate-delay-400" : "opacity-0"}`}>
+            <div className={`grid grid-cols-1 sm:grid-cols-3 gap-4 ${heroSection.inView ? "animate-fade-up animate-delay-400" : "opacity-0"}`}>
               {USPS.map((usp) => (
                 <div key={usp.title} className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-sm bg-fp-red/10 border border-fp-red/20 flex items-center justify-center flex-shrink-0">

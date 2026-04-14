@@ -132,7 +132,7 @@
   }
 
   .btn-red {
-    @apply bg-fp-red text-white font-oswald font-semibold uppercase tracking-wider px-8 py-4 rounded-sm;
+    @apply bg-fp-red text-white font-oswald font-semibold uppercase tracking-wider px-6 sm:px-8 py-3 sm:py-4 rounded-sm text-sm sm:text-base;
     background: linear-gradient(135deg, #e0292d 0%, #c0242a 100%);
     transition: all 0.3s ease;
     position: relative;
@@ -159,7 +159,7 @@
   }
 
   .btn-outline-white {
-    @apply border-2 border-white text-white font-oswald font-semibold uppercase tracking-wider px-8 py-4 rounded-sm;
+    @apply border-2 border-white text-white font-oswald font-semibold uppercase tracking-wider px-6 sm:px-8 py-3 sm:py-4 rounded-sm text-sm sm:text-base;
     transition: all 0.3s ease;
     background: transparent;
   }
@@ -181,5 +181,21 @@
   .scrollbar-hide {
     -ms-overflow-style: none;
     scrollbar-width: none;
+  }
+}
+
+.portfolio-masonry {
+  column-count: 1;
+}
+
+@media (min-width: 640px) {
+  .portfolio-masonry {
+    column-count: 2;
+  }
+}
+
+@media (min-width: 1024px) {
+  .portfolio-masonry {
+    column-count: 3;
   }
 }

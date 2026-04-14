@@ -31,7 +31,7 @@ export default function PriceSection({ scrollTo }: PriceSectionProps) {
       <div ref={section.ref} className="max-w-7xl mx-auto px-6 relative">
         <div className={`mb-16 ${section.inView ? "animate-fade-up" : "opacity-0"}`}>
           <div className="section-label mb-4">Стоимость услуг</div>
-          <h2 className="font-oswald font-bold text-5xl md:text-6xl uppercase text-fp-black">
+          <h2 className="font-oswald font-bold text-3xl sm:text-5xl md:text-6xl uppercase text-fp-black">
             прайс-лист
           </h2>
           <p className="text-fp-black/50 font-golos mt-4 max-w-xl">
