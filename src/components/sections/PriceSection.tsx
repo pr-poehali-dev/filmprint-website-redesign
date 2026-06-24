@@ -6,8 +6,7 @@ const PRICE_ITEMS = [
   { name: "Печать на фотобумаге (220 гр/м²)", price: "1 100 ₽", icon: "Image" },
   { name: "Печать с вырезанием по контуру", price: "1 980 ₽", icon: "Scissors" },
   { name: "Плоттерная резка виниловой плёнки с нанесением монтажной плёнки", price: "1 800 ₽", icon: "Layers" },
-  { name: "Интерьерная печать на натуральном холсте с натяжкой на подрамник", price: "4 500 ₽", icon: "Frame" },
-  { name: "Цена 1 ед - от 1500р", price: "от 1 500 ₽", icon: "Tag" },
+  { name: "Интерьерная печать на натуральном холсте с натяжкой на подрамник", price: "4 500 ₽", icon: "Frame", note: "Цена 1 ед - от 1500р" },
   { name: "Интерьерная печать на натуральном холсте", price: "1 850 ₽", icon: "Palette" },
   { name: "Широкоформатная печать на литом баннере", price: "720 ₽", icon: "Flag" },
   { name: "Интерьерная печать на литом баннере", price: "850 ₽", icon: "Bookmark" },
@@ -52,6 +51,9 @@ export default function PriceSection({ scrollTo }: PriceSectionProps) {
               </div>
               <div className="flex-1 min-w-0">
                 <div className="text-fp-black font-golos text-sm leading-snug">{item.name}</div>
+                {item.note && (
+                  <div className="text-fp-black/50 font-golos text-xs mt-1">{item.note}</div>
+                )}
               </div>
               <div className="font-oswald font-bold text-lg text-fp-red whitespace-nowrap pl-3">
                 {item.price}
