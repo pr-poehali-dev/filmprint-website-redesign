@@ -126,7 +126,7 @@ export default function ContactsSection({ scrollTo, activeService }: ContactsSec
                 >
                   <div className="text-white/40 text-xs uppercase tracking-wider mb-2 font-golos"></div>
                   <img
-                    src="https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/e2e13536-934f-40cc-8789-ee395d0920e0.png"
+                    src="https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/5502db44-0480-4b7c-8068-a543c8692579.png"
                     alt="QR-код Telegram @filmprintmsk"
                     className="w-44 h-44 rounded-sm brightness-0 invert opacity-70 hover:opacity-100 transition-opacity mx-0 object-cover my-0 py-0 px-0"
                   />
