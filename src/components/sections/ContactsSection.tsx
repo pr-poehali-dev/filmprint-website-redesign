@@ -122,26 +122,26 @@ export default function ContactsSection({ scrollTo, activeService }: ContactsSec
                   href="https://t.me/filmprintmsk"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block"
+                  className="inline-block text-xs my-0 py-[1px] rounded-none"
                 >
                   <div className="text-white/40 text-xs uppercase tracking-wider mb-2 font-golos"></div>
                   <img
                     src="https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/4ac8c7ee-5c19-4666-aa5c-3332167d8e04.png"
                     alt="QR-код Telegram @filmprintmsk"
-                    className="w-44 h-44 rounded-sm opacity-90 hover:opacity-100 transition-opacity mx-0 object-cover my-0 py-0 px-0"
+                    className="w-44 h-44 brightness-0 invert opacity-70 hover:opacity-100 transition-opacity object-cover rounded-3xl mx-[65px] py-2.5 px-[7px] my-2.5"
                   />
                 </a>
                 <a
                   href="https://max.ru/u/f9LHodD0cOIqR4UHX6g0mLViT9FXCWvY2ikW9bisoPrWGPrtufnuuVxhjVg"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block"
+                  className="inline-block text-transparent rounded-none my-2.5"
                 >
                   <div className="text-white/40 text-xs uppercase tracking-wider mb-2 font-golos"></div>
                   <img
                     src="https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/46e6dc98-b59f-4289-a353-6933d35f9f1f.png"
                     alt="QR-код MAX"
-                    className="w-40 h-40 object-contain rounded-[4px]"
+                    className="w-40 h-40 object-contain rounded-3xl"
                   />
                 </a>
               </div>
