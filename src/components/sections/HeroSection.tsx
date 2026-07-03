@@ -20,7 +20,7 @@ export default function HeroSection({ menuOpen, setMenuOpen, scrolled, scrollTo 
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center cursor-pointer" onClick={() => scrollTo("#hero")}>
             <img
-              src="https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/312b2ffd-6011-41f6-883f-77a9306e7696.png"
+              src="https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/84c8e565-81e1-45ff-8be3-b58808d0ae19.png"
               alt="ФильмПринт"
               className="h-10 sm:h-14 lg:h-[72px] w-auto object-contain"
             />
