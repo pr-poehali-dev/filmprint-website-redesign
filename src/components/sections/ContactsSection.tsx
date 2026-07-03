@@ -141,7 +141,7 @@ export default function ContactsSection({ scrollTo, activeService }: ContactsSec
                   <img
                     src="https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/89c2ea70-cc54-4008-a1d8-c229e574cbae.png"
                     alt="QR-код MAX"
-                    className="w-40 h-40 object-contain rounded-3xl"
+                    className="w-40 h-40 object-cover rounded-3xl py-0 mx-0"
                   />
                 </a>
               </div>
