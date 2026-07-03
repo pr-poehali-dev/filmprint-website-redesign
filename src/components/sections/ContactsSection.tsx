@@ -139,7 +139,7 @@ export default function ContactsSection({ scrollTo, activeService }: ContactsSec
                 >
                   <div className="text-white/40 text-xs uppercase tracking-wider mb-2 font-golos"></div>
                   <img
-                    src="https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/46e6dc98-b59f-4289-a353-6933d35f9f1f.png"
+                    src="https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/89c2ea70-cc54-4008-a1d8-c229e574cbae.png"
                     alt="QR-код MAX"
                     className="w-40 h-40 object-contain rounded-3xl"
                   />
