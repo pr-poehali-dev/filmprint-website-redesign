@@ -77,6 +77,35 @@ export const PRICING = [
   { name: "Декорации для кино/театра", price: "по запросу", note: "Индивидуальный расчёт" },
 ];
 
+export const CLIENTS = [
+  "Яндекс",
+  "VK Видео",
+  "Норникель",
+  "Северсталь",
+  "Росатом",
+  "X5 Retail Group",
+  "Аэрофлот",
+  "ВТБ",
+  "Сбер",
+  "Тбанк",
+  "Альфа-банк",
+  "Совкомбанк",
+  "М.Косметик",
+  "OZON",
+  "М.Видео",
+  "МегаФон",
+  "НЛМК",
+  "Electrolux",
+  "Динамо Москва",
+  "Skillbox",
+  "Золотое яблоко",
+  "Winline",
+  "BORK",
+  "Jaguar Land Rover",
+  "Comedy Club Production",
+  "М24",
+];
+
 export const PORTFOLIO_ITEMS = [
   {
     title: "Буквы для рекламы «Вкусно и точка»",

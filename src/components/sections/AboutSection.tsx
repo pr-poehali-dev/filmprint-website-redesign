@@ -1,6 +1,6 @@
 import Icon from "@/components/ui/icon";
 import { useInView } from "./useInView";
-import { HERO_IMAGE } from "./data";
+import { HERO_IMAGE, CLIENTS } from "./data";
 
 interface AboutSectionProps {
   scrollTo: (href: string) => void;
@@ -59,6 +59,25 @@ export default function AboutSection({ scrollTo }: AboutSectionProps) {
               </div>
             </div>
           </div>
+          <div className={`mt-24 ${aboutSection.inView ? "animate-fade-up animate-delay-500" : "opacity-0"}`}>
+            <h3 className="font-oswald font-bold text-2xl sm:text-3xl md:text-4xl text-fp-black uppercase mb-4 text-center">
+              Нам <span className="text-gradient-red">доверяют</span>
+            </h3>
+            <p className="text-gray-500 text-center mb-12 max-w-2xl mx-auto">Более 3 200 проектов для крупнейших компаний России</p>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-px bg-gray-200 border border-gray-200 rounded-sm overflow-hidden">
+              {CLIENTS.map((name) => (
+                <div
+                  key={name}
+                  className="bg-white h-24 flex items-center justify-center px-4 text-center group hover:bg-fp-black transition-colors duration-300"
+                >
+                  <span className="font-oswald font-semibold uppercase text-sm tracking-wide text-gray-500 group-hover:text-white transition-colors duration-300 leading-tight">
+                    {name}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+
           <div className={`mt-24 ${aboutSection.inView ? "animate-fade-up animate-delay-500" : "opacity-0"}`}>
             <h3 className="font-oswald font-bold text-2xl sm:text-3xl md:text-4xl text-fp-black uppercase mb-12 text-center">
               Почему клиенты <span className="text-gradient-red">выбирают нас</span>
