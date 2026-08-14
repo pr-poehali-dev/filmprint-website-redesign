@@ -128,6 +128,31 @@ export const PORTFOLIO_ITEMS = [
     category: "ТВ-шоу / Декорации",
     image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/6e565a96-db0a-4a0d-9925-64b0e0663848.png",
   },
+  {
+    title: "Декоративные элементы для заседания ООН",
+    category: "Декорации / Бутафория",
+    image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/e40e6da9-6ec2-4715-8102-890483872cdc.png",
+  },
+  {
+    title: "Фотозона Divage в «Золотом Яблоке»",
+    category: "Мероприятия / Декор",
+    image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/82ec9334-8e72-4c0c-9d09-a8ea8f958447.png",
+  },
+  {
+    title: "Награды из стекла и бука для Plekhanov University in Dubai",
+    category: "Награды / Сувениры",
+    image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/743a02a2-16fc-450f-ba4e-71b55cc15c0c.png",
+  },
+  {
+    title: "Промо-стойка для мессенджера MAX",
+    category: "POS / Реклама",
+    image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/885c9d25-85ae-44be-bddf-edd984095e12.png",
+  },
+  {
+    title: "Застройка студии для головного офиса МегаФон",
+    category: "Застройка / Декорации",
+    image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/6db650bd-3538-4d8f-a4fe-e4e560467dea.png",
+  },
 ];
 
 /**
