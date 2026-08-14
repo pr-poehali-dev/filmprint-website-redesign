@@ -63,7 +63,7 @@ export default function AboutSection({ scrollTo }: AboutSectionProps) {
             <h3 className="font-oswald font-bold text-2xl sm:text-3xl md:text-4xl text-fp-black uppercase mb-4 text-center">
               Нам <span className="text-gradient-red">доверяют</span>
             </h3>
-            <p className="text-gray-500 text-center mb-12 max-w-2xl mx-auto">Более 3 200 проектов для крупнейших компаний России</p>
+            <p className="text-gray-500 text-center mb-12 max-w-2xl mx-auto"></p>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-px bg-gray-200 border border-gray-200 rounded-sm overflow-hidden">
               {CLIENTS.map((name) => (
                 <div
