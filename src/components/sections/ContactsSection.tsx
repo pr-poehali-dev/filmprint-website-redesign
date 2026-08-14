@@ -117,32 +117,36 @@ export default function ContactsSection({ scrollTo, activeService }: ContactsSec
                 <Icon name="ArrowRight" size={18} className="text-white/30 group-hover:text-fp-red transition-colors ml-auto" />
               </a>
 
-              <div className="flex flex-col sm:flex-row items-start gap-6 mt-4">
+              <div className="grid grid-cols-2 gap-4 mt-6 max-w-sm">
                 <a
                   href="https://t.me/filmprintmsk"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block text-xs my-0 py-[1px] rounded-none"
+                  className="group flex flex-col items-center gap-2"
                 >
-                  <div className="text-white/40 text-xs uppercase tracking-wider mb-2 font-golos"></div>
-                  <img
-                    src="https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/4ac8c7ee-5c19-4666-aa5c-3332167d8e04.png"
-                    alt="QR-код Telegram @filmprintmsk"
-                    className="w-44 h-44 opacity-90 hover:opacity-100 transition-opacity object-cover rounded-3xl mx-[65px] py-2.5 px-[7px] my-2.5"
-                  />
+                  <div className="w-full aspect-square bg-white rounded-2xl p-3 flex items-center justify-center opacity-90 group-hover:opacity-100 transition-opacity">
+                    <img
+                      src="https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/4ac8c7ee-5c19-4666-aa5c-3332167d8e04.png"
+                      alt="QR-код Telegram @filmprintmsk"
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                  <div className="text-white/50 text-xs uppercase tracking-wider font-golos">Telegram</div>
                 </a>
                 <a
                   href="https://max.ru/u/f9LHodD0cOIqR4UHX6g0mLViT9FXCWvY2ikW9bisoPrWGPrtufnuuVxhjVg"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block text-transparent rounded-none my-2.5"
+                  className="group flex flex-col items-center gap-2"
                 >
-                  <div className="text-white/40 text-xs uppercase tracking-wider mb-2 font-golos"></div>
-                  <img
-                    src="https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/89c2ea70-cc54-4008-a1d8-c229e574cbae.png"
-                    alt="QR-код MAX"
-                    className="w-40 h-40 object-cover rounded-3xl py-0 mx-0"
-                  />
+                  <div className="w-full aspect-square bg-white rounded-2xl p-3 flex items-center justify-center opacity-90 group-hover:opacity-100 transition-opacity">
+                    <img
+                      src="https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/89c2ea70-cc54-4008-a1d8-c229e574cbae.png"
+                      alt="QR-код MAX"
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                  <div className="text-white/50 text-xs uppercase tracking-wider font-golos">MAX</div>
                 </a>
               </div>
             </div>
