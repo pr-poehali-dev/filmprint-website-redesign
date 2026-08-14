@@ -153,6 +153,31 @@ export const PORTFOLIO_ITEMS = [
     category: "Застройка / Декорации",
     image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/6db650bd-3538-4d8f-a4fe-e4e560467dea.png",
   },
+  {
+    title: "Кассовая стойка по мотивам «Отель Гранд Будапешт»",
+    category: "Бутафория / Мероприятия",
+    image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/a48b31f1-8f95-4197-a334-775b5afb5444.png",
+  },
+  {
+    title: "Стойка из металла для промо La Petite Perle",
+    category: "Мероприятия / Декор",
+    image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/8e17931c-931c-40f4-bc12-ed36aac7ba74.png",
+  },
+  {
+    title: "Награды из металла и дерева для премии PROD UP",
+    category: "Награды / Сувениры",
+    image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/65c7ff96-0e2d-4543-8c6f-30f14bcd9a7c.png",
+  },
+  {
+    title: "Фасадная сетка для Храма Христа Спасителя",
+    category: "Широкоформатная печать",
+    image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/06fadd47-e6af-4a3c-9183-5d99752e18e0.png",
+  },
+  {
+    title: "Декорация для кинофильма «Вниз»",
+    category: "Кино / Декорации",
+    image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/4200a22a-0076-4c51-8794-51e5733858e4.png",
+  },
 ];
 
 /**
