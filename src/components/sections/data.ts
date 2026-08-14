@@ -103,6 +103,31 @@ export const PORTFOLIO_ITEMS = [
     category: "Декорации / Реклама",
     image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/4b7823a4-b2bc-4aa5-8b29-725a66c1ffc3.png",
   },
+  {
+    title: "Декорации VK Видео x Аэрофлот",
+    category: "Брендирование",
+    image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/d155cdbf-e4d9-4995-b49a-f694cfaf397b.png",
+  },
+  {
+    title: "Фотозона для Магнит.Косметик",
+    category: "Мероприятия / Декор",
+    image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/a9ae9157-27f0-4949-b260-d53a0e3a09f1.png",
+  },
+  {
+    title: "Застройка в точках продаж X5 Retail Group",
+    category: "POS / Реклама",
+    image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/da4b54b5-ba09-4566-8310-96d621383d18.png",
+  },
+  {
+    title: "Декорации для рекламы М.Видео",
+    category: "Декорации / Реклама",
+    image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/59e487b7-4197-4809-92a4-1b6b70c440fe.png",
+  },
+  {
+    title: "Комплекс декораций для шоу «Наука для всех»",
+    category: "ТВ-шоу / Декорации",
+    image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/6e565a96-db0a-4a0d-9925-64b0e0663848.png",
+  },
 ];
 
 /**
