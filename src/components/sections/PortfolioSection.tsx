@@ -28,10 +28,6 @@ export default function PortfolioSection() {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
-              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 to-transparent p-4">
-                <div className="text-[11px] uppercase tracking-widest text-fp-red">{item.category}</div>
-                <div className="font-oswald text-white text-lg leading-tight mt-1">{item.title}</div>
-              </div>
             </div>
           ))}
         </div>
