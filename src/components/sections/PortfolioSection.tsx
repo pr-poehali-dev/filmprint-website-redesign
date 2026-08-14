@@ -13,38 +13,25 @@ export default function PortfolioSection() {
         </div>
 
         <div
-          className={`portfolio-masonry ${portfolioSection.inView ? "animate-fade-up animate-delay-200" : "opacity-0"}`}
-          style={{
-            columnGap: 0,
-            columnFill: "balance",
-          }}
+          className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 ${portfolioSection.inView ? "animate-fade-up animate-delay-200" : "opacity-0"}`}
         >
           {PORTFOLIO_ITEMS.map((item) => (
             <div
               key={item.title}
-              className="overflow-hidden"
-              style={{
-                breakInside: "avoid",
-                margin: 0,
-                padding: 0,
-                lineHeight: 0,
-                verticalAlign: "bottom",
-              }}
+              className="group relative overflow-hidden rounded-xl border border-white/10 bg-white/5"
             >
-              <img
-                src={item.image}
-                alt={item.title}
-                loading="lazy"
-                className="transition-transform duration-500 hover:scale-110"
-                style={{
-                  display: "block",
-                  width: "100%",
-                  height: "auto",
-                  margin: 0,
-                  padding: 0,
-                  verticalAlign: "bottom",
-                }}
-              />
+              <div className="aspect-[4/3] overflow-hidden">
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  loading="lazy"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+              </div>
+              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 to-transparent p-4">
+                <div className="text-[11px] uppercase tracking-widest text-fp-red">{item.category}</div>
+                <div className="font-oswald text-white text-lg leading-tight mt-1">{item.title}</div>
+              </div>
             </div>
           ))}
         </div>

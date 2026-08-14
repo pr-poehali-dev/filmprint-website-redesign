@@ -79,79 +79,29 @@ export const PRICING = [
 
 export const PORTFOLIO_ITEMS = [
   {
-    title: "Архитектурный макет",
-    category: "3D-печать / Макеты",
-    image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/b13ebec3-175e-4370-80ba-c0abc43b5ac8.png",
+    title: "Буквы для рекламы «Вкусно и точка»",
+    category: "Бутафория / ТВ",
+    image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/96ff9177-ea75-4ada-a06a-76938fc0ec9f.png",
   },
   {
-    title: "Рекламная стела",
-    category: "Бутафория",
-    image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/005783f0-0d94-4820-9bc6-c65f044908f7.png",
+    title: "Макет для фильма «Новая тёща»",
+    category: "Макеты / Кино",
+    image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/9e1f371b-55c4-474a-a869-5566147dce3c.png",
   },
   {
-    title: 'Декор для фильма «Удар»',
-    category: "Кино",
-    image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/bdb96a92-0dca-44b1-8c57-658f4fb58ec1.JPG",
+    title: "Интерактивные стойки для салонов Сбера",
+    category: "POS / Реклама",
+    image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/597e2e11-7d15-4773-8cf1-316800e1c081.png",
   },
   {
-    title: '«Наука для всех»',
-    category: "ТВ-шоу / Декорации",
-    image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/d1b82151-7c6e-4191-8492-bb305016f102.jpeg",
-  },
-  {
-    title: '«Корейский Вайб»',
-    category: "Логотипы / Бутафория",
-    image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/139f4b0f-4dda-4429-9061-19b937e60a1e.png",
-  },
-  {
-    title: "Барная стойка La Petite Perle",
-    category: "Мероприятия / Декор",
-    image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/4e57db5f-dc25-4739-9288-b6ec14f54739.png",
-  },
-  {
-    title: "Стойка RUTUBE «Наука для всех»",
-    category: "ТВ-шоу / Декорации",
-    image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/953c9b99-1105-482b-b48d-1ad6d749ae19.png",
-  },
-  {
-    title: "Тележка VK Видео x Аэрофлот",
-    category: "Брендирование",
-    image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/0333a842-387b-4011-b062-71f0ef50661a.png",
-  },
-  {
-    title: "Фотозона Divage",
-    category: "Мероприятия / Декор",
-    image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/76c6f741-0904-4cb1-890f-30c68b8ea023.png",
-  },
-  {
-    title: "Упаковка «Медовые черри»",
+    title: "Welcome pack для «Северстали»",
     category: "Упаковка / Печать",
-    image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/20d1ce59-c17b-4e46-a3ca-a7ea71375d68.jpg",
+    image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/fc0b77dd-3ea5-4248-8cd5-8b7e5f1e4c03.png",
   },
   {
-    title: "Телефонная будка",
-    category: "Бутафория",
-    image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/7f4968c4-31da-41ac-a98e-9a8bd1c7cd39.jpg",
-  },
-  {
-    title: "Фигура «Ведьмак»",
-    category: "3D-печать / Скульптура",
-    image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/15a24b82-8e52-49d2-bef0-771911a23139.jpg",
-  },
-  {
-    title: "Световая вывеска «Делает разницу»",
-    category: "Вывески / Реклама",
-    image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/73faaebf-d09b-4426-90e0-08b4e6906463.png",
-  },
-  {
-    title: "Наградные статуэтки",
-    category: "Бутафория / Скульптура",
-    image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/d68cfc19-e88d-450f-ae83-581ade273598.png",
-  },
-  {
-    title: "Фасадный баннер на строительных лесах",
-    category: "Широкоформатная печать",
-    image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/d6ac1093-4abf-4d41-9fe9-75b2969cd457.JPG",
+    title: "Декорации для рекламы Яндекс.Маркет",
+    category: "Декорации / Реклама",
+    image: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/4b7823a4-b2bc-4aa5-8b29-725a66c1ffc3.png",
   },
 ];
 
