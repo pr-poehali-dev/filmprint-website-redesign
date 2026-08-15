@@ -89,18 +89,18 @@ export default function AboutSection({ scrollTo }: AboutSectionProps) {
             <h3 className="font-oswald font-bold text-2xl sm:text-3xl md:text-4xl text-white uppercase mb-12 text-center">
               Нам <span className="text-gradient-red">доверяют</span>
             </h3>
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-1">
               {CLIENTS.map((client) => (
                 <div
                   key={client.name}
-                  className="h-28 flex items-center justify-center p-5 text-center group rounded-xl border border-white/10 bg-white/5 backdrop-blur-md shadow-lg hover:bg-white/10 hover:border-white/25 transition-all duration-300"
+                  className="h-28 flex items-center justify-center p-6 text-center group rounded-md border border-white/10 bg-white/10 backdrop-blur-md shadow-lg hover:bg-white/20 hover:border-white/25 transition-all duration-300"
                 >
                   {client.logo ? (
                     <img
                       src={client.logo}
                       alt={client.name}
                       loading="lazy"
-                      className="max-h-12 max-w-full object-contain brightness-0 invert opacity-70 group-hover:opacity-100 transition-all duration-300"
+                      className="max-h-14 max-w-full object-contain opacity-90 group-hover:opacity-100 transition-all duration-300"
                     />
                   ) : (
                     <span className="font-oswald font-semibold uppercase text-sm tracking-wide text-white/60 group-hover:text-white transition-colors duration-300 leading-tight">
