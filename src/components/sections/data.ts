@@ -99,14 +99,14 @@ export const CLIENTS = [
   { name: "М.Видео", logo: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/ea22be1f-07fa-4707-8565-0af4c8cbe28b.png" },
   { name: "МегаФон", logo: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/bfbfdabf-da0b-449d-9556-61c1f570ae3b.png" },
   { name: "НЛМК", logo: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/82a9cc53-924e-42ef-80a5-107b6c2a8646.png" },
-  { name: "Electrolux", logo: "" },
+  { name: "Electrolux", logo: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/f6e68d16-afc7-4735-acf4-66e4eaf48db2.png" },
   { name: "Динамо Москва", logo: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/a7791ded-be35-4ddf-a3ea-54c7c7559d7f.png" },
-  { name: "Skillbox", logo: "" },
+  { name: "Skillbox", logo: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/baac3ec7-352f-4e0b-803d-c8a4d2f672d1.png" },
   { name: "Золотое яблоко", logo: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/2c18667f-1085-4812-8a59-3389c18b47e3.png" },
   { name: "Winline", logo: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/04721a0b-db00-4d25-b736-172eb103418e.png" },
-  { name: "BORK", logo: "" },
-  { name: "Jaguar Land Rover", logo: "" },
-  { name: "Comedy Club Production", logo: "" },
+  { name: "BORK", logo: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/1eb83d48-9ba6-40cc-ae25-4b8dc5de517b.png" },
+  { name: "Jaguar Land Rover", logo: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/58fdc5c9-034a-45db-bdeb-690a9fe6e0c6.png" },
+  { name: "Comedy Club Production", logo: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/bedc1b47-6dfb-4866-95b6-61a2e459f806.png" },
 ];
 
 export const PORTFOLIO_ITEMS = [
