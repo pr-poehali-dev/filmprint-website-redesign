@@ -85,25 +85,25 @@ export default function AboutSection({ scrollTo }: AboutSectionProps) {
             </div>
           </div>
 
-          <div className={`mt-24 ${aboutSection.inView ? "animate-fade-up animate-delay-500" : "opacity-0"}`}>
-            <h3 className="font-oswald font-bold text-2xl sm:text-3xl md:text-4xl text-fp-black uppercase mb-12 text-center">
+          <div className={`mt-24 rounded-2xl bg-fp-black p-8 sm:p-12 ${aboutSection.inView ? "animate-fade-up animate-delay-500" : "opacity-0"}`}>
+            <h3 className="font-oswald font-bold text-2xl sm:text-3xl md:text-4xl text-white uppercase mb-12 text-center">
               Нам <span className="text-gradient-red">доверяют</span>
             </h3>
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-px bg-gray-200 border border-gray-200 rounded-sm overflow-hidden">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4">
               {CLIENTS.map((client) => (
                 <div
                   key={client.name}
-                  className="bg-white h-28 flex items-center justify-center p-5 text-center group hover:bg-fp-black transition-colors duration-300"
+                  className="h-28 flex items-center justify-center p-5 text-center group rounded-xl border border-white/10 bg-white/5 backdrop-blur-md shadow-lg hover:bg-white/10 hover:border-white/25 transition-all duration-300"
                 >
                   {client.logo ? (
                     <img
                       src={client.logo}
                       alt={client.name}
                       loading="lazy"
-                      className="max-h-12 max-w-full object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300"
+                      className="max-h-12 max-w-full object-contain opacity-80 group-hover:opacity-100 transition-all duration-300"
                     />
                   ) : (
-                    <span className="font-oswald font-semibold uppercase text-sm tracking-wide text-gray-500 group-hover:text-white transition-colors duration-300 leading-tight">
+                    <span className="font-oswald font-semibold uppercase text-sm tracking-wide text-white/60 group-hover:text-white transition-colors duration-300 leading-tight">
                       {client.name}
                     </span>
                   )}
