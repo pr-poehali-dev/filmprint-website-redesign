@@ -12,9 +12,9 @@ const BIG_LOGOS = new Set([
   "Comedy Club Production",
   "НЛМК",
   "Альфа-банк",
-  "Динамо Москва",
-  "Skillbox",
 ]);
+
+const MEDIUM_LOGOS = new Set(["Динамо Москва", "Skillbox"]);
 
 export default function AboutSection({ scrollTo }: AboutSectionProps) {
   const aboutSection = useInView(0.1);
@@ -96,9 +96,12 @@ export default function AboutSection({ scrollTo }: AboutSectionProps) {
           </div>
 
           <div className={`mt-24 rounded-2xl bg-fp-black p-8 sm:p-12 ${aboutSection.inView ? "animate-fade-up animate-delay-500" : "opacity-0"}`}>
-            <h3 className="font-oswald font-bold text-2xl sm:text-3xl md:text-4xl text-white uppercase mb-12 text-center">
-              Нам <span className="text-gradient-red">доверяют</span>
+            <h3 className="font-oswald font-bold text-2xl sm:text-3xl md:text-4xl text-white uppercase mb-4 text-center">
+              Выбор <span className="text-gradient-red">лидеров</span> индустрии
             </h3>
+            <p className="text-center text-white/60 text-base sm:text-lg mb-12">
+              В нашем портфеле — проекты крупнейших компаний
+            </p>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-1">
               {CLIENTS.map((client) => (
                 <div
@@ -110,7 +113,7 @@ export default function AboutSection({ scrollTo }: AboutSectionProps) {
                       src={client.logo}
                       alt={client.name}
                       loading="lazy"
-                      className={`${BIG_LOGOS.has(client.name) ? "max-h-24 scale-125" : "max-h-14"} max-w-full object-contain opacity-90 group-hover:opacity-100 transition-all duration-300`}
+                      className={`${BIG_LOGOS.has(client.name) ? "max-h-24 scale-125" : MEDIUM_LOGOS.has(client.name) ? "max-h-16" : "max-h-14"} max-w-full object-contain opacity-90 group-hover:opacity-100 transition-all duration-300`}
                     />
                   ) : (
                     <span className="font-oswald font-semibold uppercase text-sm tracking-wide text-white/60 group-hover:text-white transition-colors duration-300 leading-tight">
