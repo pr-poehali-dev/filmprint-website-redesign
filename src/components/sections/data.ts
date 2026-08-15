@@ -82,11 +82,11 @@ export const PRICING = [
  * logo — ссылка на картинку логотипа. Если пусто (""), покажется название текстом.
  */
 export const CLIENTS = [
-  { name: "Яндекс", logo: "" },
-  { name: "VK Видео", logo: "" },
-  { name: "Норникель", logo: "" },
-  { name: "Северсталь", logo: "" },
-  { name: "Росатом", logo: "" },
+  { name: "Яндекс", logo: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/0f2d6114-173b-4275-875d-0ebc0d5095dc.png" },
+  { name: "VK Видео", logo: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/f189bd7f-6665-4957-a96e-72786a203c97.png" },
+  { name: "Норникель", logo: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/34fe6126-d3c7-4ca6-af95-43e425d49ccf.png" },
+  { name: "Северсталь", logo: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/f2755543-ac4e-4e23-b246-e1a72c64f85f.png" },
+  { name: "Росатом", logo: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/330f048e-79d1-407a-afd7-679aafa31180.png" },
   { name: "X5 Retail Group", logo: "" },
   { name: "Аэрофлот", logo: "" },
   { name: "ВТБ", logo: "" },

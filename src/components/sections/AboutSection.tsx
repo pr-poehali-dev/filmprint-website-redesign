@@ -100,7 +100,7 @@ export default function AboutSection({ scrollTo }: AboutSectionProps) {
                       src={client.logo}
                       alt={client.name}
                       loading="lazy"
-                      className="max-h-12 max-w-full object-contain opacity-80 group-hover:opacity-100 transition-all duration-300"
+                      className="max-h-12 max-w-full object-contain brightness-0 invert opacity-70 group-hover:opacity-100 transition-all duration-300"
                     />
                   ) : (
                     <span className="font-oswald font-semibold uppercase text-sm tracking-wide text-white/60 group-hover:text-white transition-colors duration-300 leading-tight">
