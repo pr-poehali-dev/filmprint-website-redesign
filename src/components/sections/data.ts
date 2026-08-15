@@ -107,6 +107,9 @@ export const CLIENTS = [
   { name: "BORK", logo: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/1eb83d48-9ba6-40cc-ae25-4b8dc5de517b.png" },
   { name: "Jaguar Land Rover", logo: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/58fdc5c9-034a-45db-bdeb-690a9fe6e0c6.png" },
   { name: "Comedy Club Production", logo: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/bedc1b47-6dfb-4866-95b6-61a2e459f806.png" },
+  { name: "Вкусно — и точка", logo: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/9403ed88-9cb5-4f2e-91c0-e690dbd80726.png" },
+  { name: "Авито", logo: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/a4d7ef39-73d0-470c-8b6f-b232ab188b0d.png" },
+  { name: "Plekhanov University in Dubai", logo: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/bc7d0582-a8ad-45a0-bb86-9c9d2882326e.png" },
 ];
 
 export const PORTFOLIO_ITEMS = [
