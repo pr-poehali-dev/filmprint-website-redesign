@@ -85,7 +85,7 @@ export const CLIENTS = [
   { name: "Яндекс", logo: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/0f2d6114-173b-4275-875d-0ebc0d5095dc.png" },
   { name: "VK Видео", logo: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/f189bd7f-6665-4957-a96e-72786a203c97.png" },
   { name: "Норникель", logo: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/34fe6126-d3c7-4ca6-af95-43e425d49ccf.png" },
-  { name: "Северсталь", logo: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/f2755543-ac4e-4e23-b246-e1a72c64f85f.png" },
+  { name: "Северсталь", logo: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/a6f6ad0f-b886-41ce-a591-3313228cf257.png" },
   { name: "Росатом", logo: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/330f048e-79d1-407a-afd7-679aafa31180.png" },
   { name: "X5 Retail Group", logo: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/2e7e4dfb-92d0-4ddc-ae13-c8d029b475a4.png" },
   { name: "Аэрофлот", logo: "https://cdn.poehali.dev/projects/4ad21e29-4473-4b81-8b05-cac2fefa8718/bucket/abd519c5-8a3c-4af8-b2cf-380a083cc5ff.png" },
