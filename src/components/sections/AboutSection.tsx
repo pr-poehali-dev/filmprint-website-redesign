@@ -14,7 +14,17 @@ const BIG_LOGOS = new Set([
   "Альфа-банк",
 ]);
 
-const MEDIUM_LOGOS = new Set(["Динамо Москва", "Skillbox"]);
+const MEDIUM_LOGOS = new Set([
+  "Динамо Москва",
+  "Северсталь",
+  "Норникель",
+  "VK Видео",
+  "Аэрофлот",
+  "Сбер",
+  "Plekhanov University in Dubai",
+]);
+
+const SMALL_PLUS_LOGOS = new Set(["Skillbox"]);
 
 export default function AboutSection({ scrollTo }: AboutSectionProps) {
   const aboutSection = useInView(0.1);
@@ -113,7 +123,7 @@ export default function AboutSection({ scrollTo }: AboutSectionProps) {
                       src={client.logo}
                       alt={client.name}
                       loading="lazy"
-                      className={`${BIG_LOGOS.has(client.name) ? "max-h-24 scale-125" : MEDIUM_LOGOS.has(client.name) ? "max-h-16" : "max-h-14"} max-w-full object-contain opacity-90 group-hover:opacity-100 transition-all duration-300`}
+                      className={`${BIG_LOGOS.has(client.name) ? "max-h-24 scale-125" : MEDIUM_LOGOS.has(client.name) ? "max-h-20" : SMALL_PLUS_LOGOS.has(client.name) ? "max-h-16" : "max-h-14"} max-w-full object-contain opacity-90 group-hover:opacity-100 transition-all duration-300`}
                     />
                   ) : (
                     <span className="font-oswald font-semibold uppercase text-sm tracking-wide text-white/60 group-hover:text-white transition-colors duration-300 leading-tight">
