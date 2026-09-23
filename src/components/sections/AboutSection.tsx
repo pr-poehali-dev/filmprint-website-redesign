@@ -37,7 +37,7 @@ export default function AboutSection({ scrollTo }: AboutSectionProps) {
             <div className={aboutSection.inView ? "animate-slide-in-left" : "opacity-0"}>
               <div className="section-label mb-4">О компании</div>
               <h2 className="font-oswald font-bold text-3xl sm:text-5xl md:text-6xl text-fp-black uppercase mb-8">8 лет на рынке</h2>
-              <p className="text-gray-600 text-lg leading-relaxed mb-6">ФильмПринт — производство полного цикла. Мы не просто печатаем — мы создаём решения. За 6 лет работы мы стали для клиентов не просто подрядчиком, а надёжным партнёром, крепким тылом в производстве.</p>
+              <p className="text-gray-600 text-lg leading-relaxed mb-6">ФильмПринт — производство полного цикла. Мы не просто печатаем — мы создаём решения. За 8 лет работы мы стали для клиентов не просто подрядчиком, а надёжным партнёром, крепким тылом в производстве.</p>
               <p className="text-gray-600 leading-relaxed mb-8">Руководитель мастерской лично сопровождает проекты от концептуальной разработки до финального воплощения каждой детали. Это позволяет предвидеть возможные риски и получить предсказуемый результат.</p>
 
               <div className="grid grid-cols-2 gap-6 mb-10">
